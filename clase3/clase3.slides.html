@@ -13612,7 +13612,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
@@ -13643,7 +13643,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;clase3_imagenes/datos.npy&quot;</span><span class="p">)</span>
@@ -13664,7 +13664,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
@@ -13685,7 +13685,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -13706,7 +13706,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
@@ -13722,7 +13722,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13749,7 +13749,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span>
@@ -13765,7 +13765,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13792,7 +13792,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span>
@@ -13808,7 +13808,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13834,7 +13834,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scatter</span><span class="p">(</span><span class="n">datos</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">datos</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span><span class="p">)</span>
@@ -13850,13 +13850,13 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.collections.PathCollection at 0x7fd6d2d64b00&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x7fd2edc61358&gt;</pre>
 </div>
 
 </div>
@@ -13978,7 +13978,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">tree</span>
@@ -13993,7 +13993,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span>
@@ -14009,7 +14009,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -14029,7 +14029,7 @@ a.anchor-link {
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">data</span>
@@ -14045,7 +14045,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -14211,7 +14211,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">arbol</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">()</span>
@@ -14225,7 +14225,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">graphviz</span>
@@ -14235,33 +14235,10 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-17-f7133d3517ab&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> graphviz
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;graphviz&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dot_data</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">export_graphviz</span><span class="p">(</span><span class="n">arbol</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
@@ -14278,7 +14255,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">graph</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span><span class="n">dot_data</span><span class="p">)</span>
@@ -14291,13 +14268,304 @@ a.anchor-link {
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#graph</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">graph</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: Tree Pages: 1 -->
+<svg width="865pt" height="671pt"
+ viewBox="0.00 0.00 865.00 671.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 667)">
+<title>Tree</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-667 861,-667 861,4 -4,4"/>
+<!-- 0 -->
+<g id="node1" class="node">
+<title>0</title>
+<path fill="transparent" stroke="#000000" d="M518.5,-663C518.5,-663 382.5,-663 382.5,-663 376.5,-663 370.5,-657 370.5,-651 370.5,-651 370.5,-592 370.5,-592 370.5,-586 376.5,-580 382.5,-580 382.5,-580 518.5,-580 518.5,-580 524.5,-580 530.5,-586 530.5,-592 530.5,-592 530.5,-651 530.5,-651 530.5,-657 524.5,-663 518.5,-663"/>
+<text text-anchor="start" x="378.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal length (cm) ≤ 2.45</text>
+<text text-anchor="start" x="415" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.667</text>
+<text text-anchor="start" x="405.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 150</text>
+<text text-anchor="start" x="392.5" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [50, 50, 50]</text>
+<text text-anchor="start" x="407" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = setosa</text>
+</g>
+<!-- 1 -->
+<g id="node2" class="node">
+<title>1</title>
+<path fill="#e58139" stroke="#000000" d="M420,-536.5C420,-536.5 327,-536.5 327,-536.5 321,-536.5 315,-530.5 315,-524.5 315,-524.5 315,-480.5 315,-480.5 315,-474.5 321,-468.5 327,-468.5 327,-468.5 420,-468.5 420,-468.5 426,-468.5 432,-474.5 432,-480.5 432,-480.5 432,-524.5 432,-524.5 432,-530.5 426,-536.5 420,-536.5"/>
+<text text-anchor="start" x="345.5" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="332.5" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 50</text>
+<text text-anchor="start" x="323" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [50, 0, 0]</text>
+<text text-anchor="start" x="330" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = setosa</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g id="edge1" class="edge">
+<title>0&#45;&gt;1</title>
+<path fill="none" stroke="#000000" d="M423.5691,-579.8796C416.3117,-568.6636 408.4497,-556.5131 401.1535,-545.2372"/>
+<polygon fill="#000000" stroke="#000000" points="404.0748,-543.3093 395.7038,-536.8149 398.1978,-547.112 404.0748,-543.3093"/>
+<text text-anchor="middle" x="391.5132" y="-552.671" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">True</text>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<path fill="transparent" stroke="#000000" d="M593,-544C593,-544 462,-544 462,-544 456,-544 450,-538 450,-532 450,-532 450,-473 450,-473 450,-467 456,-461 462,-461 462,-461 593,-461 593,-461 599,-461 605,-467 605,-473 605,-473 605,-532 605,-532 605,-538 599,-544 593,-544"/>
+<text text-anchor="start" x="458" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal width (cm) ≤ 1.75</text>
+<text text-anchor="start" x="499.5" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
+<text text-anchor="start" x="482.5" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 100</text>
+<text text-anchor="start" x="473" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 50, 50]</text>
+<text text-anchor="start" x="475" y="-468.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 0&#45;&gt;2 -->
+<g id="edge2" class="edge">
+<title>0&#45;&gt;2</title>
+<path fill="none" stroke="#000000" d="M477.4309,-579.8796C483.0837,-571.1434 489.1033,-561.8404 494.9366,-552.8253"/>
+<polygon fill="#000000" stroke="#000000" points="497.9601,-554.5952 500.4542,-544.2981 492.0831,-550.7924 497.9601,-554.5952"/>
+<text text-anchor="middle" x="504.6448" y="-560.1541" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">False</text>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<path fill="#39e581" fill-opacity="0.898039" stroke="#000000" d="M483.5,-425C483.5,-425 347.5,-425 347.5,-425 341.5,-425 335.5,-419 335.5,-413 335.5,-413 335.5,-354 335.5,-354 335.5,-348 341.5,-342 347.5,-342 347.5,-342 483.5,-342 483.5,-342 489.5,-342 495.5,-348 495.5,-354 495.5,-354 495.5,-413 495.5,-413 495.5,-419 489.5,-425 483.5,-425"/>
+<text text-anchor="start" x="343.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal length (cm) ≤ 4.95</text>
+<text text-anchor="start" x="380" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.168</text>
+<text text-anchor="start" x="374.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 54</text>
+<text text-anchor="start" x="365" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 49, 5]</text>
+<text text-anchor="start" x="363" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g id="edge3" class="edge">
+<title>2&#45;&gt;3</title>
+<path fill="none" stroke="#000000" d="M488.3278,-460.8796C479.7665,-451.7832 470.6268,-442.0722 461.8168,-432.7116"/>
+<polygon fill="#000000" stroke="#000000" points="464.2417,-430.1813 454.8394,-425.2981 459.1443,-434.9789 464.2417,-430.1813"/>
+</g>
+<!-- 12 -->
+<g id="node13" class="node">
+<title>12</title>
+<path fill="#8139e5" fill-opacity="0.976471" stroke="#000000" d="M708.5,-425C708.5,-425 572.5,-425 572.5,-425 566.5,-425 560.5,-419 560.5,-413 560.5,-413 560.5,-354 560.5,-354 560.5,-348 566.5,-342 572.5,-342 572.5,-342 708.5,-342 708.5,-342 714.5,-342 720.5,-348 720.5,-354 720.5,-354 720.5,-413 720.5,-413 720.5,-419 714.5,-425 708.5,-425"/>
+<text text-anchor="start" x="568.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal length (cm) ≤ 4.85</text>
+<text text-anchor="start" x="605" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.043</text>
+<text text-anchor="start" x="599.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 46</text>
+<text text-anchor="start" x="590" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 45]</text>
+<text text-anchor="start" x="592" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 2&#45;&gt;12 -->
+<g id="edge12" class="edge">
+<title>2&#45;&gt;12</title>
+<path fill="none" stroke="#000000" d="M567.0219,-460.8796C575.6597,-451.7832 584.881,-442.0722 593.7697,-432.7116"/>
+<polygon fill="#000000" stroke="#000000" points="596.4615,-434.9597 600.8094,-425.2981 591.3854,-430.1395 596.4615,-434.9597"/>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<path fill="#39e581" fill-opacity="0.980392" stroke="#000000" d="M261,-306C261,-306 130,-306 130,-306 124,-306 118,-300 118,-294 118,-294 118,-235 118,-235 118,-229 124,-223 130,-223 130,-223 261,-223 261,-223 267,-223 273,-229 273,-235 273,-235 273,-294 273,-294 273,-300 267,-306 261,-306"/>
+<text text-anchor="start" x="126" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal width (cm) ≤ 1.65</text>
+<text text-anchor="start" x="160" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.041</text>
+<text text-anchor="start" x="154.5" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 48</text>
+<text text-anchor="start" x="145" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 47, 1]</text>
+<text text-anchor="start" x="143" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g id="edge4" class="edge">
+<title>3&#45;&gt;4</title>
+<path fill="none" stroke="#000000" d="M338.5547,-341.8796C320.0491,-331.8697 300.1675,-321.1156 281.2873,-310.9031"/>
+<polygon fill="#000000" stroke="#000000" points="282.8628,-307.7762 272.4019,-306.0969 279.5324,-313.9332 282.8628,-307.7762"/>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<path fill="#8139e5" fill-opacity="0.498039" stroke="#000000" d="M481,-306C481,-306 350,-306 350,-306 344,-306 338,-300 338,-294 338,-294 338,-235 338,-235 338,-229 344,-223 350,-223 350,-223 481,-223 481,-223 487,-223 493,-229 493,-235 493,-235 493,-294 493,-294 493,-300 487,-306 481,-306"/>
+<text text-anchor="start" x="346" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal width (cm) ≤ 1.55</text>
+<text text-anchor="start" x="380" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.444</text>
+<text text-anchor="start" x="378" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 6</text>
+<text text-anchor="start" x="368.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2, 4]</text>
+<text text-anchor="start" x="367" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 3&#45;&gt;7 -->
+<g id="edge7" class="edge">
+<title>3&#45;&gt;7</title>
+<path fill="none" stroke="#000000" d="M415.5,-341.8796C415.5,-333.6838 415.5,-324.9891 415.5,-316.5013"/>
+<polygon fill="#000000" stroke="#000000" points="419.0001,-316.298 415.5,-306.2981 412.0001,-316.2981 419.0001,-316.298"/>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<path fill="#39e581" stroke="#000000" d="M109,-179.5C109,-179.5 12,-179.5 12,-179.5 6,-179.5 0,-173.5 0,-167.5 0,-167.5 0,-123.5 0,-123.5 0,-117.5 6,-111.5 12,-111.5 12,-111.5 109,-111.5 109,-111.5 115,-111.5 121,-117.5 121,-123.5 121,-123.5 121,-167.5 121,-167.5 121,-173.5 115,-179.5 109,-179.5"/>
+<text text-anchor="start" x="32.5" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="19.5" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 47</text>
+<text text-anchor="start" x="10" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 47, 0]</text>
+<text text-anchor="start" x="8" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g id="edge5" class="edge">
+<title>4&#45;&gt;5</title>
+<path fill="none" stroke="#000000" d="M148.2836,-222.8796C134.9358,-211.1138 120.4215,-198.3197 107.1096,-186.5855"/>
+<polygon fill="#000000" stroke="#000000" points="109.2448,-183.8019 99.4287,-179.8149 104.616,-189.0531 109.2448,-183.8019"/>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<path fill="#8139e5" stroke="#000000" d="M240,-179.5C240,-179.5 151,-179.5 151,-179.5 145,-179.5 139,-173.5 139,-167.5 139,-167.5 139,-123.5 139,-123.5 139,-117.5 145,-111.5 151,-111.5 151,-111.5 240,-111.5 240,-111.5 246,-111.5 252,-117.5 252,-123.5 252,-123.5 252,-167.5 252,-167.5 252,-173.5 246,-179.5 240,-179.5"/>
+<text text-anchor="start" x="167.5" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="158" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="148.5" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
+<text text-anchor="start" x="147" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 4&#45;&gt;6 -->
+<g id="edge6" class="edge">
+<title>4&#45;&gt;6</title>
+<path fill="none" stroke="#000000" d="M195.5,-222.8796C195.5,-212.2134 195.5,-200.7021 195.5,-189.9015"/>
+<polygon fill="#000000" stroke="#000000" points="199.0001,-189.8149 195.5,-179.8149 192.0001,-189.815 199.0001,-189.8149"/>
+</g>
+<!-- 8 -->
+<g id="node9" class="node">
+<title>8</title>
+<path fill="#8139e5" stroke="#000000" d="M371,-179.5C371,-179.5 282,-179.5 282,-179.5 276,-179.5 270,-173.5 270,-167.5 270,-167.5 270,-123.5 270,-123.5 270,-117.5 276,-111.5 282,-111.5 282,-111.5 371,-111.5 371,-111.5 377,-111.5 383,-117.5 383,-123.5 383,-123.5 383,-167.5 383,-167.5 383,-173.5 377,-179.5 371,-179.5"/>
+<text text-anchor="start" x="298.5" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="289" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
+<text text-anchor="start" x="279.5" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 3]</text>
+<text text-anchor="start" x="278" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 7&#45;&gt;8 -->
+<g id="edge8" class="edge">
+<title>7&#45;&gt;8</title>
+<path fill="none" stroke="#000000" d="M384.3721,-222.8796C375.9014,-211.5536 366.7181,-199.2748 358.2153,-187.9058"/>
+<polygon fill="#000000" stroke="#000000" points="360.9562,-185.7268 352.1641,-179.8149 355.3505,-189.9193 360.9562,-185.7268"/>
+</g>
+<!-- 9 -->
+<g id="node10" class="node">
+<title>9</title>
+<path fill="#39e581" fill-opacity="0.498039" stroke="#000000" d="M549.5,-187C549.5,-187 413.5,-187 413.5,-187 407.5,-187 401.5,-181 401.5,-175 401.5,-175 401.5,-116 401.5,-116 401.5,-110 407.5,-104 413.5,-104 413.5,-104 549.5,-104 549.5,-104 555.5,-104 561.5,-110 561.5,-116 561.5,-116 561.5,-175 561.5,-175 561.5,-181 555.5,-187 549.5,-187"/>
+<text text-anchor="start" x="409.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">petal length (cm) ≤ 5.45</text>
+<text text-anchor="start" x="446" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.444</text>
+<text text-anchor="start" x="444" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
+<text text-anchor="start" x="434.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2, 1]</text>
+<text text-anchor="start" x="429" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 7&#45;&gt;9 -->
+<g id="edge9" class="edge">
+<title>7&#45;&gt;9</title>
+<path fill="none" stroke="#000000" d="M438.5836,-222.8796C443.3789,-214.2335 448.4822,-205.0322 453.4338,-196.1042"/>
+<polygon fill="#000000" stroke="#000000" points="456.5284,-197.7407 458.3179,-187.2981 450.4069,-194.3455 456.5284,-197.7407"/>
+</g>
+<!-- 10 -->
+<g id="node11" class="node">
+<title>10</title>
+<path fill="#39e581" stroke="#000000" d="M462,-68C462,-68 365,-68 365,-68 359,-68 353,-62 353,-56 353,-56 353,-12 353,-12 353,-6 359,0 365,0 365,0 462,0 462,0 468,0 474,-6 474,-12 474,-12 474,-56 474,-56 474,-62 468,-68 462,-68"/>
+<text text-anchor="start" x="385.5" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="376" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="366.5" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2, 0]</text>
+<text text-anchor="start" x="361" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 9&#45;&gt;10 -->
+<g id="edge10" class="edge">
+<title>9&#45;&gt;10</title>
+<path fill="none" stroke="#000000" d="M456.1793,-103.9815C450.7984,-95.1585 445.1068,-85.8258 439.6941,-76.9506"/>
+<polygon fill="#000000" stroke="#000000" points="442.5912,-74.9789 434.3962,-68.2637 436.6149,-78.6236 442.5912,-74.9789"/>
+</g>
+<!-- 11 -->
+<g id="node12" class="node">
+<title>11</title>
+<path fill="#8139e5" stroke="#000000" d="M593,-68C593,-68 504,-68 504,-68 498,-68 492,-62 492,-56 492,-56 492,-12 492,-12 492,-6 498,0 504,0 504,0 593,0 593,0 599,0 605,-6 605,-12 605,-12 605,-56 605,-56 605,-62 599,-68 593,-68"/>
+<text text-anchor="start" x="520.5" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="511" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="501.5" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
+<text text-anchor="start" x="500" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 9&#45;&gt;11 -->
+<g id="edge11" class="edge">
+<title>9&#45;&gt;11</title>
+<path fill="none" stroke="#000000" d="M506.4483,-103.9815C511.7501,-95.1585 517.3581,-85.8258 522.6911,-76.9506"/>
+<polygon fill="#000000" stroke="#000000" points="525.7605,-78.638 527.9111,-68.2637 519.7604,-75.0325 525.7605,-78.638"/>
+</g>
+<!-- 13 -->
+<g id="node14" class="node">
+<title>13</title>
+<path fill="#8139e5" fill-opacity="0.498039" stroke="#000000" d="M710,-306C710,-306 571,-306 571,-306 565,-306 559,-300 559,-294 559,-294 559,-235 559,-235 559,-229 565,-223 571,-223 571,-223 710,-223 710,-223 716,-223 722,-229 722,-235 722,-235 722,-294 722,-294 722,-300 716,-306 710,-306"/>
+<text text-anchor="start" x="567" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">sepal length (cm) ≤ 5.95</text>
+<text text-anchor="start" x="605" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.444</text>
+<text text-anchor="start" x="603" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
+<text text-anchor="start" x="593.5" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 2]</text>
+<text text-anchor="start" x="592" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 12&#45;&gt;13 -->
+<g id="edge13" class="edge">
+<title>12&#45;&gt;13</title>
+<path fill="none" stroke="#000000" d="M640.5,-341.8796C640.5,-333.6838 640.5,-324.9891 640.5,-316.5013"/>
+<polygon fill="#000000" stroke="#000000" points="644.0001,-316.298 640.5,-306.2981 637.0001,-316.2981 644.0001,-316.298"/>
+</g>
+<!-- 16 -->
+<g id="node17" class="node">
+<title>16</title>
+<path fill="#8139e5" stroke="#000000" d="M845,-298.5C845,-298.5 752,-298.5 752,-298.5 746,-298.5 740,-292.5 740,-286.5 740,-286.5 740,-242.5 740,-242.5 740,-236.5 746,-230.5 752,-230.5 752,-230.5 845,-230.5 845,-230.5 851,-230.5 857,-236.5 857,-242.5 857,-242.5 857,-286.5 857,-286.5 857,-292.5 851,-298.5 845,-298.5"/>
+<text text-anchor="start" x="770.5" y="-283.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="757.5" y="-268.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 43</text>
+<text text-anchor="start" x="748" y="-253.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 43]</text>
+<text text-anchor="start" x="750" y="-238.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 12&#45;&gt;16 -->
+<g id="edge16" class="edge">
+<title>12&#45;&gt;16</title>
+<path fill="none" stroke="#000000" d="M695.7607,-341.8796C711.7503,-329.8368 729.1703,-316.7167 745.0474,-304.7586"/>
+<polygon fill="#000000" stroke="#000000" points="747.3116,-307.435 753.1938,-298.623 743.1002,-301.8435 747.3116,-307.435"/>
+</g>
+<!-- 14 -->
+<g id="node15" class="node">
+<title>14</title>
+<path fill="#39e581" stroke="#000000" d="M689,-179.5C689,-179.5 592,-179.5 592,-179.5 586,-179.5 580,-173.5 580,-167.5 580,-167.5 580,-123.5 580,-123.5 580,-117.5 586,-111.5 592,-111.5 592,-111.5 689,-111.5 689,-111.5 695,-111.5 701,-117.5 701,-123.5 701,-123.5 701,-167.5 701,-167.5 701,-173.5 695,-179.5 689,-179.5"/>
+<text text-anchor="start" x="612.5" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="603" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="593.5" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 0]</text>
+<text text-anchor="start" x="588" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = versicolor</text>
+</g>
+<!-- 13&#45;&gt;14 -->
+<g id="edge14" class="edge">
+<title>13&#45;&gt;14</title>
+<path fill="none" stroke="#000000" d="M640.5,-222.8796C640.5,-212.2134 640.5,-200.7021 640.5,-189.9015"/>
+<polygon fill="#000000" stroke="#000000" points="644.0001,-189.8149 640.5,-179.8149 637.0001,-189.815 644.0001,-189.8149"/>
+</g>
+<!-- 15 -->
+<g id="node16" class="node">
+<title>15</title>
+<path fill="#8139e5" stroke="#000000" d="M820,-179.5C820,-179.5 731,-179.5 731,-179.5 725,-179.5 719,-173.5 719,-167.5 719,-167.5 719,-123.5 719,-123.5 719,-117.5 725,-111.5 731,-111.5 731,-111.5 820,-111.5 820,-111.5 826,-111.5 832,-117.5 832,-123.5 832,-123.5 832,-167.5 832,-167.5 832,-173.5 826,-179.5 820,-179.5"/>
+<text text-anchor="start" x="747.5" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="738" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="728.5" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 2]</text>
+<text text-anchor="start" x="727" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = virginica</text>
+</g>
+<!-- 13&#45;&gt;15 -->
+<g id="edge15" class="edge">
+<title>13&#45;&gt;15</title>
+<path fill="none" stroke="#000000" d="M687.7164,-222.8796C701.0642,-211.1138 715.5785,-198.3197 728.8904,-186.5855"/>
+<polygon fill="#000000" stroke="#000000" points="731.384,-189.0531 736.5713,-179.8149 726.7552,-183.8019 731.384,-189.0531"/>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14521,7 +14789,7 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pesos</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -14529,6 +14797,26 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.964357  , 0.85452147, 0.6122308 ])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14562,7 +14850,7 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
@@ -14570,6 +14858,26 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.       , 0.       , 0.6122308])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14584,7 +14892,7 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sumatorio</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pesos</span><span class="o">*</span><span class="n">entradas</span><span class="p">)</span>
@@ -14592,6 +14900,26 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6122308000827623</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14608,7 +14936,7 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">xvals</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
@@ -14617,6 +14945,41 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[21]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;matplotlib.lines.Line2D at 0x7fd2eda9b828&gt;]</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14631,13 +14994,33 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1.0</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">sumatorio</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[22]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6484495096400277</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14656,7 +15039,7 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">-</span> <span class="mf">1.0</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">sumatorio</span><span class="p">))</span>
@@ -14664,6 +15047,26 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>La función de activación es
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>-0.6484495096400277</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14712,7 +15115,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">sumatorio</span><span class="p">))</span>
@@ -14721,6 +15124,26 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[24]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.22796274308763534</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14735,7 +15158,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">delta_w</span> <span class="o">=</span> <span class="n">error</span> <span class="o">*</span> <span class="n">entradas</span> <span class="o">*</span> <span class="n">derivada</span>
@@ -14743,6 +15166,26 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([-0.        , -0.        , -0.14782233])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14757,7 +15200,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pesos</span> <span class="o">+=</span> <span class="n">delta_w</span>
@@ -14765,6 +15208,26 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[26]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.964357  , 0.85452147, 0.46440847])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14779,7 +15242,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sumatorio</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pesos</span><span class="o">*</span><span class="n">entradas</span><span class="p">)</span>
@@ -14787,6 +15250,26 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6140594655480757</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14827,7 +15310,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
@@ -14841,7 +15324,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span>
@@ -14851,10 +15334,33 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[29]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0, 0, 1],
+       [1, 1, 1],
+       [1, 0, 1],
+       [0, 1, 1]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">salidas</span>
@@ -14864,10 +15370,33 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0],
+       [1],
+       [1],
+       [0]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pesos</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
@@ -14880,13 +15409,35 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pesos</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[32]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[-0.27765079],
+       [-0.02113687],
+       [ 0.70267141]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14901,7 +15452,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sigmoide</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -14923,7 +15474,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">sigmoide</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">entradas</span><span class="p">,</span> <span class="n">pesos</span><span class="p">))</span>
@@ -14931,6 +15482,29 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[34]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.66877979],
+       [0.59962041],
+       [0.60468401],
+       [0.6640811 ]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14945,7 +15519,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">errores</span> <span class="o">=</span> <span class="n">salidas</span> <span class="o">-</span> <span class="n">y</span>
@@ -14953,6 +15527,29 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[-0.66877979],
+       [ 0.40037959],
+       [ 0.39531599],
+       [-0.6640811 ]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14967,7 +15564,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">derivadas</span> <span class="o">=</span> <span class="n">y</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y</span><span class="p">)</span>
@@ -14975,6 +15572,29 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[36]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.22151338],
+       [0.24007577],
+       [0.23904126],
+       [0.22307739]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14989,7 +15609,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span><span class="o">.</span><span class="n">T</span>
@@ -14999,16 +15619,60 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[37]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0, 1, 1, 0],
+       [0, 1, 0, 1],
+       [1, 1, 1, 1]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dot</span><span class="p">(</span><span class="n">entradas</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">errores</span> <span class="o">*</span> <span class="n">derivadas</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[38]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.19061827],
+       [-0.05202004],
+       [-0.10566688]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -15023,7 +15687,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">iteracion</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
@@ -15041,13 +15705,35 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pesos</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[40]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 9.67255557],
+       [-0.20861401],
+       [-4.62895809]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -15062,13 +15748,36 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sigmoide</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">entradas</span><span class="p">,</span> <span class="n">pesos</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[41]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.0096705 ],
+       [0.99211583],
+       [0.99359084],
+       [0.00786394]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -15129,7 +15838,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nuevas_entradas</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
@@ -15142,13 +15851,33 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<ul>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sigmoide</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">nuevas_entradas</span><span class="p">,</span> <span class="n">pesos</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[43]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.99993702])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
