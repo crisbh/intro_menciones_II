@@ -16635,14 +16635,41 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
-                <h1 id="Programa---Parte-II---Semestre-II">Programa - Parte II - Semestre II<a class="anchor-link"
-                    href="#Programa---Parte-II---Semestre-II">&#182;</a></h1>
+        <h1>Introducción a las menciones II </h1>
+        <h2>Módulo Computación Científica</h2>
+        <h3>Prof. Cristian Barrera Hinojosa</h3>
+        <h4>cristian.barrera@uv.cl</h4>
+        <h5></h5> 
+        <p>Clases disponibles en:</p>
+            <li><a href="https://crisbh.github.io/intro_menciones_II/clases.html">https://crisbh.github.io/intro_menciones_II/clases.html </li>
+<!--
+            <li><a href="clase2/clase2-slides.html"> Clase 2: Análisis de datos</li>
+            <li><a href="class2.html"> Clase 2: Historia breve de la computación</a> </li>
+            <li><a href="class3.html"> Clase 3: Programación y lenguajes</a> </li>
+            <li><a href="class4.html"> Clase 4: Algoritmos</a> </li>
+            <li><a href="class5.html"> Clase 5: Computación en paralelo</a> </li>
+            <li><a href="class6.html"> Clase 6: Simulaciones computacionales</a> </li>
+-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <div class="cell border-box-sizing text_cell rendered">
+            <div class="prompt input_prompt">
+            </div>
+            <div class="inner_cell">
+              <div class="text_cell_render border-box-sizing rendered_html">
+                <h1 id="Programa del curso ---Parte-II">Programa del curso --- Parte II<a class="anchor-link"
+                    href="#Programa del curso---Parte-II">&#182;</a></h1>
                 <ol>
-                  <li>Métodos de simulaciones</li>
+                  <li>Métodos de las simulaciones</li>
                   <li>Analisis de datos</li>
                   <li>Machine learning</li>
-                  <li>Visualizaciones</li>
-                  <li>Caso de estudio: orbitas</li>
+                  <li>Visualización de datos</li>
+                  <li>Caso de estudio: órbitas planetarias</li>
                   <li>Caso de estudio: red neuronal artificial</li>
                 </ol>
 
@@ -16661,14 +16688,17 @@ a hack to deal with our current css styles and no new styling should be added in
                 <h1 id="M&#233;todos-de-las-simulaciones">M&#233;todos de las simulaciones<a class="anchor-link"
                     href="#M&#233;todos-de-las-simulaciones">&#182;</a></h1>
                 <p>Durante la última clase del semestre pasado hablamos sobre la
-                  utilidad de las simulaciones computacionales. Ahora veremos
-                  algunas de las técnicas
-                  que se usan para crear simulaciones.</p>
+                  <b>utilidad </b>de las simulaciones computacionales y algunos
+                    ejemplos. 
+                    <li>Ahora veremos
+                  algunas de las <b>técnicas</b> 
+                  que se usan para crear simulaciones.</li></p>
+                  <p>En general, las simulaciones:</p>
                 <ul>
-                  <li>Las simulaciones típicamente buscan reproducir algún aspecto de nuestro Universo.</li>
+                  <li>Buscan reproducir algún aspecto de nuestro Universo.</li>
                   <li>Por lo tanto, se tratan de sistemas que se mueven a través del espacio y el tiempo.</li>
                 </ul>
-                <p>La primera pregunta es ¿cómo podemos representar el espacio y el tiempo en un computador?</p>
+                <p>Por lo tanto, el primer desafío es: ¿cómo podemos representar el espacio y el tiempo en un computador?</p>
 
               </div>
             </div>
@@ -16682,8 +16712,8 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
-                <p>Normalmente pensamos que el espacio y el tiempo son <em>continuas</em> (aunque a un nivel cuántico,
-                  eso podría ser incorrecto...)</p>
+                <p>Normalmente pensamos que el espacio y el tiempo son
+                    <em>continuos</em>.</p>
                 <p>No podemos representar continuidad exactamente en un computador, por su memoria finita.</p>
                 <p>Como ejemplo, considere una parte de la línea de los números reales:</p>
                 <p><img src="clase1_imagenes/real_numbers.png" alt=""></p>
@@ -16776,8 +16806,8 @@ a hack to deal with our current css styles and no new styling should be added in
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
                 <h2 id="Un-ejemplo-de-la-f&#237;sica:-un-oscilador-arm&#243;nico-simple">Un ejemplo de la f&#237;sica:
-                  un oscilador arm&#243;nico simple<a class="anchor-link"
-                    href="#Un-ejemplo-de-la-f&#237;sica:-un-oscilador-arm&#243;nico-simple">&#182;</a></h2>
+                  el oscilador arm&#243;nico simple<a class="anchor-link"
+                    href="#Un-ejemplo-de-la-f&#237;sica:-el-oscilador-arm&#243;nico-simple">&#182;</a></h2>
                 <p>Según la mecánica Newtoniana, la posición de una partícula en una dimensión está dada por $x(t)$, que
                   satisface la Segunda Ley de Newton:</p>
                 $$m\frac{d^2x}{dt^2} = F(x,t)$$
@@ -16786,6 +16816,7 @@ a hack to deal with our current css styles and no new styling should be added in
                   simulación del movimiento de la partícula.
                   Es decir, podemos resolver esta ecuación diferencial
                   numéricamente.</p>
+                  <p>Pero primero: ¿qué es una ecuación diferencial?</p>
 
               </div>
             </div>
@@ -16831,7 +16862,7 @@ a hack to deal with our current css styles and no new styling should be added in
               <div class="text_cell_render border-box-sizing rendered_html">
                 <p>En Python, hay una función del módulo <em>SciPy</em> que puede resolver ecuaciones diferenciales.</p>
                 <p>Este se aplica a ecuaciones diferenciales de <em>primer</em> orden, no de <em>segundo</em> orden
-                  (como lo que tenemos arriba). Pero es fácil convertir la ecuación en dos ecuaciones de primer orden:
+                  (como lo que tenemos anteriormente). Pero es fácil convertir la ecuación en dos ecuaciones de primer orden:
                 </p>
                 $$\frac{dx}{dt} = v$$
                 $$\frac{dv}{dt} = -\frac{k}{m}x$$
@@ -16885,7 +16916,7 @@ a hack to deal with our current css styles and no new styling should be added in
               </div>
               <div class="inner_cell">
                 <div class="text_cell_render border-box-sizing rendered_html">
-                  <p>Definimos los lados derechos de las ecuaciones arriba como una función de Python.</p>
+                  <p>Definimos los lados derechos de las ecuaciones anteriores como una función de Python.</p>
                   <p>El primer argumento a la función será una lista <code>Y</code> de dos elementos. El primer elemento
                     <code>Y[0]</code> es un valor de $v$, y el segundo elemento <code>Y[1]</code> es un valor de $x$.
                   </p>
@@ -16903,7 +16934,7 @@ a hack to deal with our current css styles and no new styling should be added in
                     <div class=" highlight hl-ipython3">
                       <pre><span></span><span class="k">def</span> <span class="nf">ecuaciones</span><span
                           class="p">(</span><span class="n">Y</span><span class="p">,</span> <span
-                          class="n">t</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+                          class="n">t</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">Y</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">v</span><span
                           class="p">,</span> <span class="o">-</span><span class="p">(</span><span
@@ -17347,7 +17378,8 @@ a hack to deal with our current css styles and no new styling should be added in
               <div class="text_cell_render border-box-sizing rendered_html">
                 <p>Esta es la solución general a la ecuación differential de segundo orden (con $\omega_0^2 = 1$). Se
                   puede determinar las constantes $C_1$ y $C_2$ por las condiciones iniciales:</p>
-                $$x(0) = 0, \quad v(0) = 1$$<p>La velocidad es la derivada del lado derecho arriba con respecto al
+                $$x(0) = 0, \quad v(0) = 1$$<p>La velocidad es la derivada del
+                    lado derecho de la solución obtenida respecto al
                   tiempo:</p>
 
               </div>
@@ -17402,7 +17434,7 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
-                $$v(t) = C_1 \cos(t) - C_2 \sin(t)$$
+                  $$v(t) = \frac{dx}{dt}= C_1 \cos(t) - C_2 \sin(t)$$
               </div>
             </div>
           </div>
@@ -17429,6 +17461,7 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
+                <p>Luego:</p>
                 <p>La posición como función del tiempo es</p>
                 $$x(t) = \sin(t)$$<p>y la velocidad es</p>
                 $$v(t) = \cos(t)$$<p>Podemos comprobar nuestro resultado numérico con el resultado analítico.</p>
@@ -17447,11 +17480,11 @@ a hack to deal with our current css styles and no new styling should be added in
                 <div class="input_area">
                   <div class=" highlight hl-ipython3">
                     <pre><span></span><span class="n">plot</span><span class="p">(</span><span
-                        class="n">tiempo</span><span class="p">,</span><span class="n">solucion</span><span
+                        class="n">tiempo</span><span class="p">, </span><span class="n">solucion</span><span
                         class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tiempo</span><span
-                        class="p">,</span><span class="n">sin</span><span class="p">(</span><span
-                        class="n">tiempo</span><span class="p">),</span><span class="s1">&#39;o&#39;</span><span
+                        class="p">, </span><span class="n">sin</span><span class="p">(</span><span
+                        class="n">tiempo</span><span class="p">), </span><span class="s1">&#39;o&#39;</span><span
                         class="p">)</span>
 <span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Tiempo [s]&quot;</span><span class="p">)</span>
 <span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Posición [m]&quot;</span><span class="p">)</span>
@@ -17569,7 +17602,8 @@ a hack to deal with our current css styles and no new styling should be added in
               <div class="text_cell_render border-box-sizing rendered_html">
                 <h3 id="Otro-m&#233;todo:-diferencias-finitas">Otro m&#233;todo: diferencias finitas<a
                     class="anchor-link" href="#Otro-m&#233;todo:-diferencias-finitas">&#182;</a></h3>
-                <p>Ahora vamos a ver un método muy útil que se puede aplicar a
+                <p>Ahora vamos a ver un método muy útil que no requiere de
+                    modulos específicos como <em>SciPy</em> y que se puede aplicar a
                     <em>cualquier</em> ecuación diferencial.
                   El método se llama <strong>diferencias finitas</strong>.</p>
                 <p>Este método se utiliza en simulaciones de la relatividad general, simulaciones cosmológicas, del
@@ -17772,7 +17806,8 @@ a hack to deal with our current css styles and no new styling should be added in
               <div class="text_cell_render border-box-sizing rendered_html">
                 <p>El número de pasos total de la simulación será el tiempo total dividido por el intervalo de cada
                   paso.</p>
-                <p>Hacemos una conversión de un número real a un número entero, porque usaremos este valor para
+                <p>Hacemos una conversión de un número real (punto flotante) a
+                    un número entero (int), porque usaremos este valor para
                   especificar el número de elementos que queremos en los arreglos que guardan los valores de $x$, $v$.
                 </p>
 
@@ -17895,7 +17930,7 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
-                <p>Ahora tenemos un ciclo <em>for</em> para tener una iteración sobre todos los pasos del tiempo. Usamos
+                <p>Ahora, podemos utilizar un ciclo <em>for</em> para tener una iteración sobre todos los pasos del tiempo. Usamos
                   una variable $i$ en el ciclo. Esta variable será el índice para los arreglos <code>x</code> y
                   <code>v</code>.
                 </p>
@@ -18033,9 +18068,10 @@ a hack to deal with our current css styles and no new styling should be added in
             </div>
             <div class="inner_cell">
               <div class="text_cell_render border-box-sizing rendered_html">
-                <p>Las oscilaciones crecen! Pero sabemos que la solución
-                    analítica (la solución exacta) del problema es 
-                  la función $\sin(t)$.</p>
+                <p>Según la solución obtenida ahora, las oscilaciones crecen! </p>
+                  <p>Pero sabemos que la solución
+                    analítica (exacta) del problema es 
+                  la función $\sin(t)$. </p>
                 <p>¿Qué pasó?</p>
                 <p>Hay que recordar que estamos aproximando las derivadas con diferencias finitas. Podemos mejorar la
                   aproximación con un valor más pequeño de $h$.</p>
@@ -18819,7 +18855,7 @@ a hack to deal with our current css styles and no new styling should be added in
                 <li>Hemos visto que es posible resolver las ecuaciones diferenciales de un oscilador armónico simple
                   analíticamente. Por lo tanto, no necesitamos una simulación numérica.</li>
           <div class="fragment">
-                <li>En el caso de ecuaciones diferenciales más complicadas (o cuando el sistema tienen muchos
+                <li>Sin embargo, en el caso de ecuaciones diferenciales más complicadas (o cuando el sistema tienen muchos
                   componentes) <b>necesitamos </b>las simulaciones.</li>
           </div>
           <div class="fragment">
