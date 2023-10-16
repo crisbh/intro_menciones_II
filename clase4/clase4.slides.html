@@ -15171,8 +15171,9 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Visualizaci%C3%B3n-de-datos">Visualizaci&#243;n de datos<a class="anchor-link" href="#Visualizaci%C3%B3n-de-datos">&#182;</a></h1><p>Supongamos que tenemos el resultado del análisis de datos, de la simulación, del algorítmo de <em>machine learning</em> etc. El último paso es la comunicación de estos resultados con una <strong>visualización de datos</strong>.</p>
-<p><img src="clase4_imagenes/infographic.png" alt="" /></p>
+<h1 id="Visualizaci%C3%B3n-de-datos">Visualizaci&#243;n de datos<a class="anchor-link" href="#Visualizaci%C3%B3n-de-datos">&#182;</a></h1><p>Supongamos que tenemos el resultado del análisis de datos, de la simulación, del algorítmo de <em>machine learning</em>, etc.</p>
+<p>El último paso es la comunicación de estos resultados con una <strong>visualización de datos</strong>.</p>
+<img style="float: center;" src="clase4_imagenes/infographic.png" alt="alt text" width="800" height="600" class="blog-image">
 
 </div>
 </div>
@@ -15184,9 +15185,9 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Visualización es un aspecto muy importante de la ciencia.</li>
-<li>Hay muy pocos casos donde no necesitamos crear una representación gráfica de nuestro trabajo.</li>
-<li>Incluso en la matemática pura una visualización buena puede ayudar mucho.</li>
+<li>La visualización es un aspecto muy importante de la ciencia.</li>
+<li>Hay muy pocos casos donde <em>no</em> necesitamos crear una representación gráfica de nuestro trabajo.</li>
+<li>Incluso en la matemática pura, una visualización buena puede ayudar mucho.</li>
 </ul>
 
 </div>
@@ -15210,8 +15211,9 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Cuarteto-de-Anscombe">Cuarteto de Anscombe<a class="anchor-link" href="#Cuarteto-de-Anscombe">&#182;</a></h3><p>En la clase sobre análisis de datos, vimos que es muy importante &quot;explorar&quot; los datos a ver como son. Una forma rápida y útil de hacer eso es... graficarlos.</p>
-<p>Vamos a ver un ejemplo famosos de la estadística que se llama el &quot;Cuarteto de Anscombe&quot;.</p>
+<h3 id="Cuarteto-de-Anscombe">Cuarteto de Anscombe<a class="anchor-link" href="#Cuarteto-de-Anscombe">&#182;</a></h3><p>En la clase sobre análisis de datos, vimos que es muy importante &quot;explorar&quot; los datos a ver como son.</p>
+<p>Una forma rápida y útil de hacer eso es... graficarlos.</p>
+<p>Vamos a ver un ejemplo famoso de la estadística, llamado <strong>&quot;El Cuarteto de Anscombe&quot;</strong>.</p>
 <p><img src="clase4_imagenes/anscombes_quartet_valores.png" alt="" /></p>
 
 </div>
@@ -15223,10 +15225,11 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>El Cuarteto de Anscombe consiste en:</p>
 <ul>
-<li>4 conjuntos de datos, con valores diferentes pero propiedades <em>estadísticas</em> que son iguales:</li>
-<li>La <em>corelación</em> entre las variables es la misma.</li>
-<li>La línea de regresión que pasa por todos los puntos también es lo mismo.</li>
+<li>4 conjuntos de datos, con valores diferentes pero propiedades <em>estadísticas idénticas</em>:</li>
+<li>La <em>correlación</em> entre las variables es la misma.</li>
+<li>La recta obtenida mediante <em>regresión lineal</em> también es la misma.</li>
 </ul>
 
 </div>
@@ -15238,8 +15241,8 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ahora los gráficos:</p>
-<p><img src="clase4_imagenes/anscombes_quartet.png" alt="" /></p>
+<p>Los gráficos de los datos y rectas obtenida mediante regresión lineal:</p>
+<img style="float: center;" src="clase4_imagenes/anscombes_quartet.png" alt="alt text" width="900" height="600" class="blog-image">
 
 </div>
 </div>
@@ -15250,14 +15253,24 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>¡Son todos muy diferentes! El único gráfico que parece &quot;normal&quot; es el primero. Todos los otros muestran puntos con &quot;estructura&quot; (es decir, no parecen datos &quot;reales&quot;).</p>
-<p>Si no tenemos una razon por sospechar que haya estructura en los datos, quizás pensaríamos que hay algo mal en nuestros datos en los otros 3 gráficos.</p>
+<p>¡Los 4 conjuntos de datos son muy diferentes! El único gráfico que parece &quot;normal&quot; es el primero. Todos los otros muestran puntos con &quot;estructura&quot; (es decir, no parecen datos &quot;reales&quot;).</p>
+
+</div>
+</div>
+</div>
+</div><div class="fragment" >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Si no tenemos una razón para sospechar que haya estructura en los datos, podríamos concluir que hay algo mal en nuestros datos en los otros 3 gráficos.</p>
 <p>Este ejemplo ilustra el uso de los gráficos para analizar rápidamente los datos, y posiblemente detectar problemas.</p>
 
 </div>
 </div>
 </div>
-</div></section></section><section ><section >
+</div></div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15482,9 +15495,9 @@ div.jp-OutputPrompt {
 
 
 
-<div id="472ef505-0d0a-467a-8071-9d409f148736" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="336636d2-9741-436e-a974-42a821c5a9f1" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('472ef505-0d0a-467a-8071-9d409f148736');
+var element = document.getElementById('336636d2-9741-436e-a974-42a821c5a9f1');
 
 (function(root) {
   function now() {
@@ -15879,9 +15892,9 @@ var element = document.getElementById('472ef505-0d0a-467a-8071-9d409f148736');
 
 
 
-<div id="00e370e2-4d34-46f1-bce6-a1cd8008278b" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="17a998f3-4c0c-40df-839b-fbfd22ddd14d" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('00e370e2-4d34-46f1-bce6-a1cd8008278b');
+var element = document.getElementById('17a998f3-4c0c-40df-839b-fbfd22ddd14d');
 (function(root) {
   function embed_document(root) {
     
