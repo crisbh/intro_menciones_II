@@ -15343,9 +15343,9 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Un-ejemplo-de-la-f%C3%ADsica:-el-oscilador-arm%C3%B3nico-simple">Un ejemplo de la f&#237;sica: el oscilador arm&#243;nico simple<a class="anchor-link" href="#Un-ejemplo-de-la-f%C3%ADsica:-el-oscilador-arm%C3%B3nico-simple">&#182;</a></h2><p>De acuerdo a la Segunda Ley de Newton, una partícula de masa $m$ sometida a una fuerza $F$ experimentará una aceleración dada por:</p>
+<h2 id="Un-ejemplo-de-la-f%C3%ADsica:-el-oscilador-arm%C3%B3nico-simple">Un ejemplo de la f&#237;sica: el oscilador arm&#243;nico simple<a class="anchor-link" href="#Un-ejemplo-de-la-f%C3%ADsica:-el-oscilador-arm%C3%B3nico-simple">&#182;</a></h2><p>De acuerdo a la Segunda Ley de Newton, una partícula de masa $m$ sometida a una fuerza $F$ experimentará una aceleración derminada por:</p>
 $$m a = F(x,t)$$<p>Por definición, la aceleración no es más que el cambio de la velocidad en el tiempo. A su vez, la velocidad es el cambio de la posición $x(t)$ en el tiempo.</p>
-<p>Esto implica que <strong>la posición</strong> $x(t)$ de una partícula está dada por:</p>
+<p>Esto implica que <strong>la posición</strong> $x(t)$ de una partícula se rige según:</p>
 $$m\frac{d^2x}{dt^2} = F(x,t)$$<p>Si conocemos $F$, entonces podemos hacer una simulación del movimiento de la partícula: es decir, podemos resolver la <em>ecuación diferencial</em> numéricamente.</p>
 
 </div>
@@ -15869,7 +15869,7 @@ $$x(0) = C_2 = 0$$$$v(0) = C_1 = 1$$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La posición como función del tiempo es</p>
+<p>Por lo tanto, en nuestro sistema, la posición como función del tiempo es</p>
 $$x(t) = \sin(t)$$<p>y la velocidad es</p>
 $$v(t) = \cos(t)$$<p>Podemos comprobar nuestro resultado numérico con el resultado analítico.</p>
 
@@ -16073,12 +16073,22 @@ $$\frac{dx}{dt}(t_i) = v_i = \frac{x_{i+1} - x_i}{h}$$$$\frac{dv}{dt}(t_i) = \fr
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>De acá podemos &quot;despejar&quot; la incógnita del tiempo futuro (con subíndices $i+1$), obteniendo así unas <em>relaciones de recurrencia</em>:</p>
 $$x_{i+1} = hv_i + x_i$$$$v_{i+1} = -\frac{k}{m}hx_i + v_i$$<p>Conceptualmente, estas ecuaciones permiten determinar el <em>estado</em> del sistema en el instante siguiente a partir de nuestro conocimiento de su estado actual.</p>
+
+</div>
+</div>
+</div>
+</div><div class="fragment" >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Podemos cambiar los índices en las relaciones de recurrencia para tener algo más parecido al programa que escribiremos:</p>
 $$x_{i} = hv_{i-1} + x_{i-1}$$$$v_{i} = -\frac{k}{m}hx_{i-1} + v_{i-1}$$
 </div>
 </div>
 </div>
-</div></section></section><section ><section >
+</div></div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
