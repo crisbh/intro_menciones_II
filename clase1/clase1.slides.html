@@ -16901,769 +16901,769 @@ class="
 </ul>
 <p>El método de <strong>diferencias finitas</strong>, por otra parte, aplica a <em>cualquier</em> sistema de ecuaciones diferenciales, y por eso es muy utilizado en simulaciones.</p>
 
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="M%C3%A9todos-de-Monte-Carlo">M&#233;todos de Monte Carlo<a class="anchor-link" href="#M%C3%A9todos-de-Monte-Carlo">&#182;</a></h2><p>En la física cuántica es muy común usar el método de Monte Carlo. Este método utiliza números aleatorios para evaluar integrales.</p>
-<p>Por eso recibe su nombre por un casino famoso en Mónaco:</p>
-<p><img src="clase1_imagenes/monte_carlo.jpg" alt="" /></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En la física cuántica, las posiciones de las partículas no están totalmente localizadas:</p>
-<ul>
-<li>Pueden no solamente seguir un camino en el espacio entre dos puntos.</li>
-<li>También puede que tomen <strong>todos</strong> los caminos entre dos puntos!</li>
-</ul>
-<img style="float: center;" src="clase1_imagenes/path_integral.jpg " alt="alt text" width="300" height="300" class="blog-image">
-
-</div>
-</div>
-</div>
-</div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En la física estadística, también tratamos el sistema de forma probabilistica porque hay tantas partículas que es imposible analizarlas individualmente.</p>
-<p>Por estas razones, los métodos de Monte Carlo son muy utilizados en estudios del comportamiento de la materia al nivel microscópico.</p>
-
-</div>
-</div>
-</div>
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="C%C3%A1lculos-en-la-f%C3%ADsica-cu%C3%A1ntica-o-estad%C3%ADstica">C&#225;lculos en la f&#237;sica cu&#225;ntica o estad&#237;stica<a class="anchor-link" href="#C%C3%A1lculos-en-la-f%C3%ADsica-cu%C3%A1ntica-o-estad%C3%ADstica">&#182;</a></h3><p>Típicamente en la física cuántica o estadística, queremos calcular <strong>valores promedios</strong> de algunas propiedades del sistema. Por ejemplo, el valor promedio de la energía de todas las partículas.</p>
-<p>Matemáticamente, calcular un promedio corresponde a la <strong>evaluación de una integral</strong>. En un sistema como el núcleo de un átomo, las integrales que tenemos que evaluar típicamente son muy complicadas y multidimensionales.</p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="Las-integrales">Las integrales<a class="anchor-link" href="#Las-integrales">&#182;</a></h5><p>Se puede interpretar una integral como el área debajo de una curva:</p>
-<p><img src="clase1_imagenes/Integral_example.png" alt="" /></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Numéricamente podemos aproximar las integrales con muchas divisiones del área en rectángulos. Así el problema se reduce al sumatorio de las áreas de muchos rectángulos. Aquí está un ejemplo en una dimensión:</p>
-<p><img src="clase1_imagenes/integral_approx.png" alt="" /></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>De hecho con un procedimiento así uno puede <strong>definir</strong> la integral de una función. Se encuentra el valor exacto de la integral en el límite de un número infinito de rectángulos con anchos infinitesimalmente pequeños.</p>
-<p>Como lo que vimos para las derivadas (valores de $h$ pequeños pero no nulos), es posible aproximar una integral numéricamente por el uso de rectángulos muy estrechos, pero todavía con tamaño finito.</p>
-<p>Entonces, puede ser que podemos tener una aproximación aceptable de la integral de una función con $1000$ rectángulos, por ejemplo.</p>
-<p>También se puede definir la integración en más dimensiones. Por ejemplo, se puede determinar el volumen de una forma geométrica:</p>
-<p><img src="clase1_imagenes/vol_integral.jpg" alt="" /></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li><p>Supogamos que necesitamos $1000$ divisiones en cada dimensión para calcular una integral de un volumen en $3$ dimensiones a una precisión aceptable.</p>
-</li>
-<li><p>Esto corresponde a $1000^3 = 10^9$ cubitos!</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li><p>En la física cuántica y estadística es común tener integrales de $10^6 - 10^9$ <strong>dimensiones</strong>!</p>
-</li>
-<li><p>Es totalmente imposible evaluar una integral así con los métodos normales de dividir el &quot;volumen&quot; en muchos &quot;cubitos&quot; pequeños.</p>
-</li>
-<li><p>Pero, hay otro método que sirve - el <strong>Método de Monte Carlo</strong>.</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Ejemplo:-calculando-el-valor-de-$%5Cpi$-con-un-m%C3%A9todo-de-Monte-Carlo">Ejemplo: calculando el valor de $\pi$ con un m&#233;todo de Monte Carlo<a class="anchor-link" href="#Ejemplo:-calculando-el-valor-de-$%5Cpi$-con-un-m%C3%A9todo-de-Monte-Carlo">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Consideremos un círculo con radio $r$ circunscrito dentro de un cuadrado, donde cada lado tiene longitud $2r$:</p>
-<img style="float: right;" src="clase1_imagenes/circlesquare1.png">
-<ul>
-<li>El área del círculo es $M = \pi r^2$.</li>
-<li>El área del cuadrado es $N = 4r^2$.</li>
-</ul>
-<p>Entonces tenemos:</p>
-$$\frac{M}{N} = \frac{\pi}{4}$$<p>Así que es posible calcular $\pi$ a través del cuociente:</p>
-$$\pi = 4M/N$$
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Estimando-el-%C3%A1rea-del-c%C3%ADrculo-con-n%C3%BAmeros-aleatorios">Estimando el &#225;rea del c&#237;rculo con n&#250;meros aleatorios<a class="anchor-link" href="#Estimando-el-%C3%A1rea-del-c%C3%ADrculo-con-n%C3%BAmeros-aleatorios">&#182;</a></h4><img style="float: right;" src="clase1_imagenes/circlesquare2.png">
-<p>Ahora podemos elegir números aleatorios entre $-1$ y $1$ para las coordenadas $x$ y $y$. 
-Estos puntos <strong>siempre estarán dentro del cuadrado</strong>, pero no siempre dentro del círculo:</p>
-<p>La probabilidad de tener un punto dentro del círculo es proporcional al área del círculo: $p_{circ} \propto M$.</p>
-<p>La probabilidad de tener un punto dentro del cuadrado es proporcional al área del cuadrado: $p_{cuad} \propto N$.</p>
-<p>Por lo tanto, tenemos:</p>
-$$\frac{p_{circ}}{p_{cuad}} = \frac{M}{N}$$
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<img style="float: right;" src="clase1_imagenes/circlesquare2.png">
-<p>Dado que los puntos <em>siempre</em> están dentro del cuadrado,</p>
-$$p_{cuad} = 1$$<p>por lo que el cuociente anterior puede escribirse como</p>
-$$p_{circ} = M/N$$<p>Si tenemos $n$ puntos en total, la probabilidad de tener $m$ puntos dentro del círculo está dada por $p_{circ} = m/n$. Por ende, tenemos una relación entre el número de puntos y los áreas:</p>
-$$\frac{m}{n} = \frac{M}{N}$$<p>Vamos a usar está relación para estimar el valor de $\pi$.</p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Primero, generamos $10$ números aleatorios entre $-1$ y $1$ que son las coordenadas en $x$ (dentro del cuadrado):</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ahora generamos $10$ números aleatorios más dentro el mismo rango para las coordenadas $y$:</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Calculamos el radio de todos los puntos.</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Comparamos estos radios con el radio del círculo (que es $r = 1$). Si su radio es mayor que $1$, ese punto no está dentro del círculo.</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([0.53211976, 0.97058278, 1.16745815, 0.59565166, 0.74339391,
-       0.86875641, 0.28885551, 1.17722448, 0.78311334, 0.91377612])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Hay algunos valores mayor que $1$. Podemos calcular cuantos por el uso de un arreglo <em>Booleano</em>.</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">&gt;</span> <span class="mf">1.0</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([False, False,  True, False, False, False, False,  True, False,
-       False])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La sumatoria de un arreglo Booleano solamente cuenta los valores de <em>True</em> (verdad).</p>
-<p>Entonces, el número total de puntos dentro del círculo está dado por:</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>8</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ahora, calculamos la razón entre el número de puntos dentro del círculo y el número total.</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0.8</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Este es el valor de $M/N$ (para solamente $10$ puntos). El valor de $\pi$ está dado por $4M/N$:</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">4.0</span><span class="o">*</span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>3.2</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>El resultado no es muy preciso...</p>
-<p>Pero podemos usar más números aleatorios. Ahora hacemos un ciclo <em>for</em> para ver como el resultado mejora con más números aleatorios. Primero, definimos una lista de números totales de puntos que usaremos en cada ciclo:</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeros_totales</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">10100</span><span class="p">,</span><span class="mi">100</span><span class="p">)]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeros_totales</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400, 4500, 4600, 4700, 4800, 4900, 5000, 5100, 5200, 5300, 5400, 5500, 5600, 5700, 5800, 5900, 6000, 6100, 6200, 6300, 6400, 6500, 6600, 6700, 6800, 6900, 7000, 7100, 7200, 7300, 7400, 7500, 7600, 7700, 7800, 7900, 8000, 8100, 8200, 8300, 8400, 8500, 8600, 8700, 8800, 8900, 9000, 9100, 9200, 9300, 9400, 9500, 9600, 9700, 9800, 9900, 10000]</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Creamos una lista vacía para guardar los resultados de cada cálculo del valor de $\pi$.</p>
-
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">resultados</span> <span class="o">=</span> <span class="p">[]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ahora estimamos el valor de $\pi$ con diferentes números totales de puntos aleatorios.</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numeros_totales</span><span class="p">:</span> <span class="c1"># Ciclo sobre todos los valores de &quot;n&quot;</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="c1">#n números aleatorios para x</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="c1">#n números aleatorios para y</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#Los radios de los puntos</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span> <span class="c1">#Cuantos puntos hay dentro del círculo, el valor &quot;m&quot;</span>
-    <span class="n">resultados</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mf">4.0</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">n</span> <span class="p">)</span> <span class="c1">#Agregamos el valor estimado de pi</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div></section></section><section ><section ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">numeros_totales</span><span class="p">,</span><span class="n">resultados</span><span class="p">)</span>
-<span class="n">plot</span><span class="p">([</span><span class="n">numeros_totales</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">numeros_totales</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;matplotlib.lines.Line2D at 0x169c42070&gt;]</pre>
-</div>
-
-</div>
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcQAAAFfCAYAAADQ/ryfAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjcuMSwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/bCgiHAAAACXBIWXMAAA9hAAAPYQGoP6dpAABzK0lEQVR4nO29eZwcdZ3//6q+e6an58zM5JjJQUJCLggJhAEBgZADRFBUYNGgi7qw8F1YVDQegCImAusPdN2AiIu6higooAhECAQFQ0JCEnJwhNzHHJmZzPTM9N1dvz+qP5/+VHVVn9Uz0zPv5+ORB0x3dXV1dfXnVe9bkmVZBkEQBEGMcixDfQAEQRAEMRwgQSQIgiAIkCASBEEQBAASRIIgCIIAQIJIEARBEABIEAmCIAgCAAkiQRAEQQAAbEN9AGYQj8dx/PhxVFRUQJKkoT4cgiAIYoiQZRl9fX0YN24cLJbcbL4RIYjHjx9HU1PTUB8GQRAEMUw4cuQIJkyYkNNrRoQgVlRUAFBOgNfrHeKjIQiCIIYKn8+HpqYmrgu5MCIEkblJvV4vCSJBEASRV/iMkmoIgiAIAiSIBEEQBAGABJEgCIIgAJAgEgRBEASAHAVx9erVmDt3Lk9eaWlpwYsvvmi4/WOPPYbzzz8f1dXVqK6uxqJFi7B582bVNl/84hchSZLq39KlS/P7NARBEASRJzkJ4oQJE7Bq1Sps3boVW7ZswcUXX4wrr7wSu3fv1t1+w4YNuO666/Daa69h48aNaGpqwuLFi3Hs2DHVdkuXLkVrayv/9+STT+b/iQiCIAgiDyRZluVCdlBTU4MHHngAN954Y8ZtY7EYqqur8d///d9Yvnw5AMVC7OnpwbPPPpv3Mfh8PlRWVqK3t5fKLgiCIEYxhehB3jHEWCyGtWvXYmBgAC0tLVm9xu/3IxKJoKamRvX4hg0bUF9fj+nTp+Pmm29GV1dX2v2EQiH4fD7VP4IgCIIohJwL83fu3ImWlhYEg0F4PB4888wzmDlzZlav/eY3v4lx48Zh0aJF/LGlS5fi05/+NCZPnox9+/bh29/+NpYtW4aNGzfCarXq7mflypX4/ve/n+uhEwRBEIQhObtMw+EwDh8+jN7eXjz99NP45S9/iddffz2jKK5atQr3338/NmzYgLlz5xput3//fpxyyil45ZVXcMkll+huEwqFEAqF+N+sVQ+5TAmCIEY3g+oydTgcmDp1KubPn4+VK1fi9NNPx8MPP5z2NQ8++CBWrVqFv/3tb2nFEACmTJmCuro6fPTRR4bbOJ1OnulK7drSs+tYL/79d1txoHNgqA+FIAhiWFNwHWI8HldZa1ruv/9+3HvvvXjppZewYMGCjPs7evQourq6MHbs2EIPjQDw+7eP4IWdbXhu+7HMGxMEQYxicoohrlixAsuWLUNzczP6+vqwZs0abNiwAevWrQMALF++HOPHj8fKlSsBAD/+8Y9x1113Yc2aNZg0aRLa2toAAB6PBx6PB/39/fj+97+Pq6++Go2Njdi3bx/uvPNOTJ06FUuWLDH5o45OBkJRAIA/HBviIyEIghje5CSIHR0dWL58OVpbW1FZWYm5c+di3bp1uPTSSwEAhw8fVg1kXL16NcLhMD7zmc+o9nP33XfjnnvugdVqxbvvvotf//rX6Onpwbhx47B48WLce++9cDqdJnw8IhhVhDBAgkgQBJGWnATx8ccfT/v8hg0bVH8fPHgw7fZut5tbl0RxCEbiif+SIBIEQaSDepmOcJgQBqPxIT4SgiCI4Q0J4ggnwASRLESCIIi0kCCOcMhlShAEkR0kiCOcEFmIBEEQWUGCOMJJukwphkgQBJEOEsQRTpAsRIIgiKwgQRzh8BhilASRIAgiHSSIIxhZlrnLNBAmlylBEEQ6SBBHMCGh9jBELlOCIIi0kCCOYEJCIg25TAmCINJDgjiCEUUwEpMRi+c0+pIgCGJUQYI4gtE29KZMU4IgCGNIEEcwWjdpgASRIAjCEBLEEYy2GJ8sRIIgCGNIEEcwqS5TKr0gCIIwggRxBKN1mZKFSBAEYQwJ4ghGW3sYotILgiAIQ0gQRzDaJBrqVkMQBGEMCeIIhpJqCIIgsocEcQSjFUDqVkMQBGEMCeIIJtVCJJcpQRCEESSIIxhtDJFcpgRBEMaQII5gtFmmJIgEQRDGkCCOYFJiiCSIBEEQhpAgjmBSXaYUQyQIgjCCBHEEwwTQYbUk/iYLkSAIwggSxBEME8CqMrvyN5VdEARBGEKCOIIJaASROtUQBEEYQ4I4ggklXKZVbgcAshAJgiDSQYI4jLjvr3tw/S/fQjRmjiXHBJBZiNoyDIIgCCKJbagPgEiyZtNhDIRjONg1gKn1FQXvj81DrC5LWIiUZUoQBGEIWYjDBFmW4U9YcOGobMo+tRYiZZkSBEEYQ4I4TAhF45ATOhgxy2XKYogJC1Fbl0gQBEEkIUEcJvjDSbEyTxDJQiQIgsgWEsRhgmi9hU0WxGouiBRDJAiCMIIEcZgQCEf5/0dihccQY3GZ74e5TENUdkEQBGEICeIwQeUyjRZuyYnu0SqyEAmCIDJCgjhMMDuGKLpgK932lMcIgiAINSSIwwSzY4jMQnTaLHDbrQCYG5WsRIIgCD1IEIcJAcFCDJviMlX24bJb4UoIovI4WYkEQRB6kCAOE9Qu08KTapjwuewWOG0WSBJ7nCxEgiAIPUgQhwnqLFPzXKZuuxWSJMFpo5mIBEEQ6SBBHCaIMURzBDHpMhX/S4JIEAShDwniMEF0mZqaVJMQQjcXRHKZEgRB6EGCOEwIqOoQC48hBrjLVPmKuYVIxfkEQRC6kCAOE8yuQ0wm1ShCSDFEgiCI9JAgDhNMjyEmSjdcNm0MkVymBEEQepAgDhMCZscQE/tzO5ggKl81dashCILQhwRxmOAvUtkFE0I3ZZkSBEGkhQRxmOA3OamGJc84NS7T0CgQxB8+vwc/f+2joT4MgiBKDNtQHwChEDQ5hhgIK/tIukxHRwyxwxfEL984AIsE3HzhKbBYpKE+JIIgSoScLMTVq1dj7ty58Hq98Hq9aGlpwYsvvmi4/WOPPYbzzz8f1dXVqK6uxqJFi7B582bVNrIs46677sLYsWPhdruxaNEi7N27N79PU8KIFmLIlKSahMvUpo4hjnSXqS8YAQDEZfMGLRMEMTrISRAnTJiAVatWYevWrdiyZQsuvvhiXHnlldi9e7fu9hs2bMB1112H1157DRs3bkRTUxMWL16MY8eO8W3uv/9+/PSnP8UjjzyCTZs2oby8HEuWLEEwGCzsk5UYxZqHyISQuU5HelJNXzAZiw2NcGuYIAhzycllesUVV6j+vu+++7B69Wq89dZbmDVrVsr2v/vd71R///KXv8Qf//hHrF+/HsuXL4csy3jooYfw3e9+F1deeSUA4De/+Q0aGhrw7LPP4tprr8318xSNXn8EWw51Q06E9ywWYMGkGnhddlP2b3bZBRMD5jJl/x3pLtP+kCCI0RgAc74fgiBGPnnHEGOxGJ566ikMDAygpaUlq9f4/X5EIhHU1NQAAA4cOIC2tjYsWrSIb1NZWYmFCxdi48aNhoIYCoUQCoX43z6fL9+PkTVf/e0WbDrQrXrskhn1ePyLZ5my/4DJ0y6YwHKXqW10dKrpFy1EEyxtgiBGDzlnme7cuRMejwdOpxM33XQTnnnmGcycOTOr137zm9/EuHHjuAC2tbUBABoaGlTbNTQ08Of0WLlyJSorK/m/pqamXD9GTsTjMnYc7QEAzB7vxfSGCgDA+219pu2/aAOCeeu20RFD7BMsxJH+WQmCMJecBXH69OnYvn07Nm3ahJtvvhk33HAD9uzZk/F1q1atwtq1a/HMM8/A5XLldbCMFStWoLe3l/87cuRIQfvLRHtfEMFIHFaLhGf+/Tz88oYFAIDO/hBk2bwSCUYxWreNlmkXAyGyEAmCyI+cXaYOhwNTp04FAMyfPx9vv/02Hn74YTz66KOGr3nwwQexatUqvPLKK5g7dy5/vLGxEQDQ3t6OsWPH8sfb29txxhlnGO7P6XTC6XTmeuh5c6BzAADQVO2G3WpBnUd571A0jv5QFBUFxhHFhBrApLILFkMcZdMuRJfpSBd/giDMpeDC/Hg8rornabn//vtx77334qWXXsKCBQtUz02ePBmNjY1Yv349f8zn82HTpk1ZxyUHg4OdfgDApLpyAEqCSnkiSaWzP1zw/gNaQTShMD+kbe6do8tUlmX8Y+8JnBwo/PMNJv1kIRIEkSc5WYgrVqzAsmXL0NzcjL6+PqxZswYbNmzAunXrAADLly/H+PHjsXLlSgDAj3/8Y9x1111Ys2YNJk2axOOCHo8HHo8HkiTh9ttvxw9/+ENMmzYNkydPxve+9z2MGzcOV111lbmftAAOdikW4qTacv5YXYUTA11+dPaHMLmu3OilWaEthShG67ZcXaZvfNSJLzy+GVecPg4/u25ewcczWPSlZJkSBEFkR06C2NHRgeXLl6O1tRWVlZWYO3cu1q1bh0svvRQAcPjwYVgsSaNz9erVCIfD+MxnPqPaz91334177rkHAHDnnXdiYGAAX/3qV9HT04OPfexjeOmllwqOM5oJc5mKwlfnceJQlx+dfcbWcbZoXaZmJNUk5yHm16nmYOIzt/YECj6WwUTtMiULkSCI7MlJEB9//PG0z2/YsEH198GDBzPuU5Ik/OAHP8APfvCDXA5lUGHiMEkliA4AwIl+MwQxqvrbHAsxMf6JCWKO8xB7/ErHl1Ir5B8gC5EgiDyh5t4ZiMdlHOpWYoiTa9UWIgBTLESte7PQOkRZlpPNvdm0C0duLtOeQGkKorrsgixEgiCyhwQxA8d7AwhH47BbJYyrSrpxx1QognjChKQa5jKtcitWZ6Gt28KxOO+ok+IyzXLfJ/3K5yq19meqwvwSE3OCIIYWEsQMsAzTppoy2KzJ08UtRFNcpsrCXelWyjcKjSEGw8nXJ12muVmIvSXqMqUsU4Ig8oUEMQMHEhmmorsUMFcQWdmF162EdBULL3+3KXOXWi0S7NbUTjXZ7JtZiNqSkOHOALlMCYLIExLEDOgl1ADAmArFvWmKIEbUFqIsA7F4AYKoyTAFAGfi/7MdiyTGEM3oxjNYUNnF0CLLMv71ibdxzaMbES/gGiaIoYAGBGfASBCTSTXmxRC97mTHm0hMhs1q9Ir0BDRJOoBaHIOROB8HZQRzmQKK69Flz/NgBpFQNIaw4CYll+ng4w/H8Or7HQCAbn+Y/04IohQgCzEDmVymgUhM5abLh0Ci7EIcJVVIHJG5CkXRs1slsOHxmZJNZFnmFqKyv9KwtAZC6uMsleMeSYjzKEvN3U4QJIhpiMbiONLN2raVqZ4rd9q41XWiwNILfQuxEEFMtRAlScq6OL8vFFW5bEslsUbMMAXIQhwK+oLJG6lSuW4IgkGCmIbjPUFEYjIcNgvGVbpTnq8zKY7IFo5yhxV2q2LGFSKIvEuNQ+3mTJZepF+oegYiqr9L5U6/X2Opk4U4+Igx3FK5bgiCQYKYBuYunVhTBgvzNwqMMSnTlC0cZQ4rzwotpME3b+ytiROybjWZFqqegDouWirZmlpBJAtx8FG5TOmGhCgxSBDTYJRQw2BxxEKL85nL1GVPCqIZMURtIowry241J/0aC7FEFrb+kPq4SRAHH5XLlCxEosQgQUyDXlNvkboKc9q3JS1EW9JCNCWGqLUQs+tW0+PXWoilsbD1BcllOtSQhUiUMiSIadAb+yRiVnE+WzjKHFY4TIwhikk14t+ZhKI3UNoxRGvCvU0W4uAjJjZpp7gQxHCHBDENSZdpme7zYzzmJNWwaRduhxV2mxkWooHLNMuZiCc1STWZknCGC6z8paZc+V6ol+ngQ1mmRClDgmhAJBbHkZPKLEBDlymLIZrkMnXbrXCwGGIBSTV6nWrEvzMJojappmQsxIR1UssEkSzEFIrddcgnzqMskeuGIBgkiAYcPRlALC7DZbegoUJ/WDGPIRaaVBPRyTI1uQ5R+Tu7OsQeTVJNqcTiWMo/m0RCFmIqX/nNFlz4wGtFu8kRM33JZUqUGiSIBnB3aW25bskFYGIMkVmIprlM9ZNqnFnGEFOTakrD0tJaiNmOuhotfNTRh1fe68ChLj/2negvynuQy5QoZUgQDTjQmT6hBkhaIv5wLGXqfbbE4jJ37ZU5bDypJlzAYp45hpjBQkwk1Yjt6UqBgcR3wI6bLEQ1L+5s4/+vzcg1C3G/peJZIAgGCaIBPMPUIH4IKJ1lmFsy3ybfoti4TapDDGQsu8hkISqCOLbSlXKMwxm2GNcyQSQLUcULu0RBjKTZMn/ULtPiiC5BFAsSRAOSNYj6GaaA0h80WZyfn9uULRqSpMT8kjHEwpNqtDFEtyPLTjUJl2kjE8RhEAvq8AXx2vsdaZNC2GJcm8j+jcZlRAsctjxSONA5gPdaffzvwbAQAyXiaicIBgmiAZlqEBmFxhHZdHu33QpJksxJqokm9ynCLMR0cwLjcZnXITILcTjMFfz2M7vwpSfexuYD3YbbsBhiXUIQAbISGS/ualX9XSwLUd2phixEorQgQdQhHI3jWIaSC0ahguiPKItGWaKtmsOWXWF+OkvJsFNNFjHEvmAUbNDFsLIQ+4IAgDZf0HCbfl6HmJzBR3EshZcS7lJ2nRXLQvRRpxqihCFB1OFwtx9xWYkRssQZI8YkJl5kW4v4yp52vPp+O/9b7GMKIBlDTGPZdA+E8bEfv4aVL76n+7xx2UXmLFNWg1jmsPL5jMNhYQslRDydODNB9LpsvJ6TLETgSLcf7x7thUUCls5uBKCeSmEW2gHNw+FGiiBygQRRB1ZyMbG2HJKkX3LByMVCDIRjuPl3W3HTb9/hsUNx0gWArGKIO4704FhPAC/vbtd9nguiTVt2kbkwnzX2ri5zcJfrcIgFsSQjI3GWZZkLosdl4yUmJIhJ63Dh5FoeAiiGy1Q7j5LqEIlSgwRRBxY/zOQuBQRBzCLL9KQ/jEhMRjiWdMkmaxBtAJBVDJHF+IyEjZddOPQ71aSz+FhCTaXbzucpDge3IyuhMDp2fzgG5kX2OG1w2obPsQ81LyTih5fNaUSFS7nOfEVwmVJzdaLUIUHU4UCGHqYiYyqytxDFBeNojyKIft5mTfkqsmnu7Uvc3RuJQ8DAQswmhshKLqrK7Fm3ehsMmIVo1A6MWYcWSRF+F1mIAIDjPQFsO9wDSQKWzGpERcINXowYonYeJVmIRKlBgqhDthmmQG4uU9FNlbQQWVKNcufusGWuQ/QF0gtiQTHEhIVYXebgbsfhEAtiMUSjRZYt8B6nDZIkwZk4j6O9OH/9+x0AgLMm1qDe6+IWYjFcpuxGzZbo7DQcYs8EkQskiDoc7PQDyNZlyiZeZHaZinflx5mFKLRtAwSXaZrm3kmXaRzxeOp2TDzcDn0LMZ3VxGKIlYKFOBwWtlCGGCKbdMEsIGeWsx9HOh2JrNzTxlYAgCCIxXOZMq/JcPAsEEQukCBqCEZiON6riFW6LjUM1uC7PxTNaEn5RAsxIYh8FqJdm1STzkJMLmZacYvFZW5dal2m2bhAmdhWl4kxxKEVFVmWefaikSDyhBqnsuBzl+koX5S1MWovd5kWL6mmPvGbiMTkguppCWKwIUHUcLjbD1kGKpw23iQ6HRVOG3dzZnKbinflqUk1rA4xC0EUFjOtuIl/p9YhJlygWbhMq9yOZKu3IRYV0X1sdCzs3JY7lWMmC1EhwGPUyvkoroWoXJdjhOkww8G7QBDZQoKoIZlQk7nkAlDat43Jsn2bShANXaaJ5t5ZZJkCqQuOKBgsjpb8O/uyiyrBQgxEYkWfo5eOUBa1bcmSi4TLlCxEAIIgJtr2MZeyPxwzva1dnzBtxJqII9JMRKKUIEHUcLAzc1NvLTyOmKE4X3RTtfuCiMTiXBDL7Oqyi3SF+b40I3aYReS0WVLGVolZpkYCxyZdVJU5+PaxuFxQb9VCURV7Z4ohMpepLXO8dDQgDp8GkhYikJoVWij9PI5r4+9HmaZEKUGCqIHXINZmLrlgVJYpgpjJDSU+H5eBtt4gt9ZSC/OziyFqLSatC1ZEzDo1Eopklqld1Qs104SMYpKThZgQxGxnP450tJNP7FYLvw7E68gMWG1jhcvO349cpkQpQYKo4UAeFqI9YYlF4+mtEW0iw9GTAd6xhhXRO7LoVJMuhsg739hTBVEUuAED60CsQ7RbJTAjsxiur2gsjjf2dma0VLKxEHnZRcIC4mUXZCECUN8gMbepz+TEGnZ9V7hs/AaPLESilCBB1MBKLnIRRBsvpk/vVtRakMd6AoLLNHEHn6G5dzwu8zpEIFUgtAKrPk4LvAnBYLFCkVhc5otkpdsBSZKKWnrx5x3H8fnHN+Enf/sw7XbitA3jLFPluMt5lmnCZTrKLRStBwIwTqw5ORDG9iM9eb+XeFMynJo6EES2kCAKBMIxPk1hchZF+QxbwqrLlKTQF0zGWAAl09Sol6lRDHEgnJxGAaSWRPh1FkCR6kTmLHONivgCEd7+rKpMsSKKWXrxflsfAODISX/a7dQNo/WPg6X8sxgiWYgKesOiKwxKL277/XZc9fM3VXMTc0Fsrs5uyIZDUweCyBYSRAEWP6x027lwZEPSZZreQmTW12mNXgDAsR6/kAWYXQxR24NSazEFNEk6WqoS8U49C5El1HicNn4cxYwFtfYqNx+ZauJEUTOyOPpDyuPMZZpNE4LRgLbsAgD3EmgtxI/aEzco3elvUIxIukzt3OPhJwuRKCFIEAXyyTAFkhZiti7TGYmuIcd6AilZgJliiL0aIdPG9rRlHFpqEpbfyYFUC/Ekq0FMbAMIgliEO/3WROlJrjFEvQxZ5jL1aCzEYrvsjvUE8Ks3DuCeP+/WPaeF0JHIRC4E/Rhiavs2WZZ5t6V8b37E9nncs0AWIlFC6JsRo5QDeWSYAsnawcwuU2UBmsEsxJMB7orU9jI1thDVgphqIaoHDmup5hZi6uLdKyTUMIoZC2IWonZskBYxhsg68Tg1XXjE0U9AsuayGBaiLMv4zcZD+OM7R/Hu0V7+eIPXhZs/foop73GgcwCX/NcGLJ3diP+5fn7e+9HecAFAhTO1wXdfKMprXwdC+X3X/UG9soviDCImiGJAgiiQt4VoSYhYGpepOK+PWYjHe4K8PEDrMjUqzBcTagC9pJr0FiJzBXfrCOJJobE3o1iCGIvLaPcxl2n2FiIABMM6ghhUl10kp12YL+TvHu3F3X/eDQCQJKUQvbM/nDEWmgt72/sQl4Hdx/OL5wHKNad1yQOChShY5l1CL958RCwel9EfTpZdJJs6jG6XNVFakMtUIJem3iK2LCzEgXCMJ8NMrffAapEQjsW5GGg71RhZiL0aQdQKlT+cIakmYf31DOjEEFljb7fgMnUUJ4bY1R/iMddM09u1Vp7esaTUIdqKlwz0xkedAIBzptRg87cX4WuLpwNQ6krNgn1G7fedC+FYnF9z7gxJNV1Cl6V83OP94ShPyBItRKpDJEoJEkSBAzmMfRJhVl26pBq2+FgtEiqcNjR6XarnU5p7G0y7yJRUk0yzz5RUk2ohJrvUCIJoy9z/NB+OC+IRjsbTWnJ5CWIRLcSN+7oAAMtmj8WYCicaK5Xvkk0wMQMmSr5ARHeiSTYEhYxcMcvU604dEiz24c0nEYZZ6HarMnqrjGeZksuUKB1IEBMEIzFes5a7yzTzUF+x5EKSJIyvcquez7a5t9ZlaphUo1OYDwA15WkEUc9lWqT0+bZetXikiyOmCKLmWCKxOLcEK1zFtRBD0RjePtgNADj3lFoAwLhK5btsNdFCZN9jXM5sQRvuI5IUKXajBUB3SLA4vkzvu+4PRfHW/i5Dce4TutRIkkSdaoiShAQxgctuxY67F+Od712qchlmQ7IOMbOFyBbs8dVJQbRIyazITDFE5kJjHWRyjSEy60+37ELHZeouUvnC8R61eKTLNNXGELWfWey6U15kC3Hb4R6EonHUeZyYWu8BAIytUizE3kDEtCQS8TNqb4Ky3kc4tQYR0M8yzRRDvO+ve3DtL97CK++1676X9vpO3khRDJEoHUgQBSRJ4hZULmTTuo33eUxk+IkWottu5ZM1+LQLAwFiWaZ1iQkb2qSFQCR9lim3ENOUXYgWYrHKLlgDBEa6xBqtqGmPhb3WZbck6ydZlqnJFiJzl557Si3/zrwuO3fVmmUliqLUo3PzokXvhkKvBhHQ71TTNSC4THW+6yPdikW/yyDJp0+T1MRdppHh6zKNxOL4yd8+wDuHTw71oRDDBBJEE8imDlHbpUa0EN1CvM+RqTA/0ZC5IRGDNEqqMXKZMrHrCURS6vl69WKIRXJ9aeNt6QQxo4UYVi/GgNDc22QLURREERZHbO0xRxBFyypTYs3/vnkAc+5Zh7/tblM9rte2DdAfEqyKIRq4TAHjov2+kPr6Lmb9qln8bXc7fvrqR/jaH3bo1rZuOdiNw13mZQ4T6fm/tw7h/z25DW/t7xqyYyBBNIFs6hDFLh6A2kIUFyxm4cRlpTRBC3OfZRJE46Qa5f2VvqVqEUo29k4tuzBbELWWVDqXaaakGm3JBSC0bjPRQvSHo9h2RLEmWjSCOJYl1vSak1gjWlaZBPGv77ZClqGqiQSSomrsMtWPIeq5TNljhoKoub5LYfzTh4nOPAc6B7DvRL/quXeP9uCzj27Ev/3f1qE4tFHJn945ir/sOI4PEi0dhwISRBPgSTVps0yTfR4BYJyRIApDffWsROYybfAmXKYG45+MXKZOmxXliedEt6nSqUSxEkS3MRssa3YdIitRYCLGOs3okVqHqHGZaoryAXH2o3nHveXgSURiMsZXudFco27ewBJrzCq9EIWkJ2DcAScYiXEh1N5U6NUgAvpDgjOVXbBi/cOGgqjuJVvm0D//f3rnKO59fk/embNmwibbAMC63erY6J/eOQZZVkQz10HKkVj6rGkilbbeIN453AMAWDKrcciOgwTRBLJp7p2SVCMIongHz6xNQD+xRmshGk27MEqqAfRLL/pCUb4IiyUhxRCWWFzmMcRpDUpiSk4xxFwsRBOTgf6ZcJe2CPFDBneZmmQhioKYzkJ892iv0GFGfQ75tWBgIQJJEe0aEC1EHUFM7KujL6R7LfRrQgJGnoUfvfA+Hn/jAN5ry7/hgFns70xahX/bkxTEaCyO599tBaC+VrOhoy+IpQ/9HRfc/1pRu/Rs+KADb+ztLNr+B5t1CXf/mc1V/Lc0FJAgmkDSZZqFhehOTpGoTVhiKgvRIliIOos5c3M2GghiJgsRAKrLWaZpchFklk2l264S02LEgjr7Q4jFZVgtEqbUZRbETDHEZA1iMvYptm7Tiw/lw8Z9ygKkjR8CwLgqVotojoUoio62f60IKwEBkqKl3YdWEMUhwX3BKCKxuCpxR08Q/UI7t6M6HXlSXKY68xBjcZkn74hZrUOBLMs4cCJpIe440sM7J23c36WKqR49md1Nji8YwQ2/ehv7Tgyg3RcqmuuvtTeAG3+9BV/+zdtF69XrD0dx6U9ex5d/vcW03086Xtyl3IAsmz226O+VDhJEE8imdZs2qQZIJtaI4mWxSEJdo3p/0VicL/5jEi5TrfswYJBIIcL7mQrdapggjtXcnRUjhsgSahoqnLzEI5cYonbBHuCCKAp58tI2w0rsDUSw85jimtTGDwFgbBFdpuksxC2CIPaH9G+O9GZjikOCuzUZx9rvOhyNq7wVem5T7fXt1nGZ9grjxfTqYAeTjr4QBsIxWCRgzvhKAMDLCSvxz9uPq7Y9loUgBiMxfPU3W1Sjs/YLgmsm69/rQCwuIxiJ40RfKPML8uCdQz3Y29GPV95rL2hGZjZ09Yew+YByHS+dPXTuUiBHQVy9ejXmzp0Lr9cLr9eLlpYWvPjii4bb7969G1dffTUmTZoESZLw0EMPpWxzzz33QJIk1b8ZM2bk/EGGkmxat2nvoIGk29StSYAxKs4Xraj6ioQgGoiFdp8ieg2+2ULe4NUXRDML3Nl7NVa6eNwv3QgoZiEa9VUVB9MyxF6nZgji5gPdiMvAlLpyLn4i3EIcRJdpPC5jy6FkyYDWZcpKcsp0Mo7FxBrRGlLeW7MfzQ0IK8EQ0cZx9ZJquoXSDrMng+QKE6ummjJcPlexSv62px3BSAwv7VLcd1PGKA06MlmIsbiMO/6wHW/t74bHacPCyTXKe3T2p31dvqwXakFzcefmwq7jyQStJzcfzum1j76+D7et3aabFKjHy3vaEZeB2eO9aKrJbbCC2eQkiBMmTMCqVauwdetWbNmyBRdffDGuvPJK7N69W3d7v9+PKVOmYNWqVWhsNFb+WbNmobW1lf974403cvsUQ4w9i8J8n56FyATRrv4ajIrzWUJNucPKU+cDGpdUSCMeeuh1q2E/LK2FWIwYImvbNrbKzZOMsulUwzJktQu0nsvUbpV48wIzEhw2CvFDPRoTItkXjGYcZ5UNgSzqED/s6FPdJKUKonGTBrFbDXNf8pusSFy1mPVrBFLfQtR3mYrjuroFj0R3FrWVxYSJ1ZS6clw6swGA4hL/y47j6AtFMbbShStPHw9AmVuajjWbDuGFnW1wWC34xRfmY3EiKURM2jELfziKN/clyxLaiySIYlP5v+xoTZmyY4Qsy3jolb14bvvxrAdNv5i4ARlqdymQoyBeccUVuOyyyzBt2jSceuqpuO++++DxePDWW2/pbn/WWWfhgQcewLXXXgun02m4X5vNhsbGRv6vrq4u7XGEQiH4fD7Vv6EkmWWaTeu25KK9bM5YTKotS8mqMhoSzCwFr9uuqg9kC47o6krnMtXrVtNqZCE6zO9lytq2jfW6hCzTzDFE5l41SqoRbzYkSUrGEU2wbrceUlw6C6foC6LHaePvr21Llw/ZWIhvH1SsQ35TEcouhii+pi8Y4RaieHcunmN/KBtB1E+qkeXkDY3omu0ZYpcpix9OrvPglDEenDKmHJGYjB+98B4A4IrTx6G5VrnJyWQhsmSrWy6ainOn1nHLshgu03/s7VTF1Nt9xXGZ7k5YiA6rBYFIDM9p3MhGdA2E+bWTjTu3NxDBPxOx+aF2lwIFxBBjsRjWrl2LgYEBtLS0FHQQe/fuxbhx4zBlyhRcf/31OHw4vYm+cuVKVFZW8n9NTU0FvX+hZGMharNMAWD+xGps+MZFuOS0BtW2DjbxQtPgmxXle13qxBe24DBXlyS0gtMjGUNMLkrtGSxEM5NqRAuRudi0NZEizMIzFMTEgl2uuQkwq31bLC7jg0TN2uxxXsPtWOmFGYk1gUhmQWTxw/OnjQFgnGWqrUME1C5TZiGOr3KDJc+KbtOBFJdpGkF0qgURSF47oiBq45aDzf6E9cbEi1l17Cbxk6ePw/gq5QYhkyDuSVhC8ydWK/tM9EI+0DlgenkJc5ey76mjCBbiQCjKrduvXDAZALBm0+GskmvEeGs2grj+vXZEYjJObVBuTIaanAVx586d8Hg8cDqduOmmm/DMM89g5syZeR/AwoUL8cQTT+Cll17C6tWrceDAAZx//vno6zPO0FqxYgV6e3v5vyNHjuT9/mZgyzCyCUitQ0wHq0U0cpl63TY+hQJILjg8w1RoBadHtY7LlFuIBkk1ZrpMxQQeZjGnc5mGNS5TbSIRE4xKocMOkGzfVmj881DXAIKROFx2CyammYRiZulFIBsLMZGIcOF0JojapJqE+1zPZcqHBEfQmYjtjalwJpOohPdnQstuso50+1MWx/6Q2gNis1p41yUm7uL1lk07umKy/0TSZQqAu00BRSRnjfNiQjVr2h4wjIf1BSM4lOhmc1pizumE6jLYrRJC0bhpMWVAiRm/+v4JAMAFiZugYrhM32v1QZaVTPavnD8FDpsF77X6sEPT+EGPY0IHqhP9mQWRuUuXDgN3KZCHIE6fPh3bt2/Hpk2bcPPNN+OGG27Anj178j6AZcuW4bOf/Szmzp2LJUuW4IUXXkBPTw/+8Ic/GL7G6XTyxB72byhhWaZG45/E4cCiy9SITC7TSrcdNquFl3uw9mTZJNQAwkxEYVHKZCGamVTTmvjRjK3MzmXKY4huRci1WabsRkHblD1XC1GWZd1t30+kz09vqIDVYnyjwRJrCu1nGo7GVddSfyiaci0c6wngeG8QVouEj01VQgzhWFzlTjNq3QboW4i1Hgff1q8jiKyZ+UA4pnK3y7Ks6wFhmb5MEMVSi6G0EMPROI4kLJkpCavkjAlVGJOIoV55+nhIkoQGrws2i4RITEZHn/53yq6NRq8LtYn+wlaLxG+czHSb7jjag87+ECqcNnwikQhUDJcpix/OGudFVZkDl89R3uvJTZmTa3KxEAdCUfz9Q0Xglw0DdymQhyA6HA5MnToV8+fPx8qVK3H66afj4YcfNu2AqqqqcOqpp+Kjjz4ybZ/FJlPrNn84xu8wK7KxEA0EkRXls4QarTsz03BgBnOZskUpGInx/9fOaWQWQzgWzzprLB2xuIz2xA9lbKVbd/KCFh5DLNN3mWrPCyPX9m3/78ltWPDDV1Luut9PuMROG5v+xotlnxbaz1TPPa2deMHcpbPHeflCDqjdpuw86btMWdlFMsu0rtypWz/I/r+m3MGvDzGOGIrGeYmQeH2z9oHs86gtxKETxMPdfsTiMsocVt7xyWKR8O3LZuDj08fg8+c0A1CEjU0yMXKb7hHEQ0R0m5rF+vc6AAAXTB+DCdWKO7cYFuKuRHkR+0zXna2cjz/vOJ72dwqoa1QzWYibD3QjFI2juaYMMxorCjlk0yi4DjEejyMUMu8upb+/H/v27cPYscPDhM6GTM29mbvUapHSZn8yHAYTL5IuU3W/SLbwZVOUDyRdpj1+pcF3R+Iu02W3pFhZorvNDLfpiT6lKN9mkTCmwskX0P5Q1DBGEdIk1WiPw6dpesDg1m2WFuKbH3WiLxjFhg86VI/vaVWsgEw/WrP6mbLv05YYJg2kuk1ZQf6CSTWwWy28VEe0tNn1oHfNiTciooVYrhExcZ9lDiuaahTRFwWRXd+SBP56QJ1pCqi74XQPoSAykZpcV64KLXxq3gQ88aWzuaUHABMScUSjWkQmiDO1gpiwPPefMK/0go3eWnRaPRdyPUHcfKAbP12/F09uPoxX329PuECzv5nlFmKiPvOsSdWYWu9BIBLDCztb075WdJl2ZrAQWcvB+ROr04Z4BpPM5orAihUrsGzZMjQ3N6Ovrw9r1qzBhg0bsG7dOgDA8uXLMX78eKxcuRIAEA6HuTs1HA7j2LFj2L59OzweD6ZOnQoA+PrXv44rrrgCEydOxPHjx3H33XfDarXiuuuuM/NzFhVbhvFPojspmy8+myxTILX4OV2avQhzmYZjcQyEYzzm1eh1pRyfmJwTiMT4vMF8YWLR4HXBapG4yzQSU0pG9KwZrSCKFqIsy8nzUoCFGI7GuRvw7YMncc1Zzfy59xNtxmZkayEW6DIV2+95XXb0haIpgrglkWF61iQlkcPjtKE7GlZ1q/GnyTJVu0wTFqInaSGq9hNmSUs2lDttePvgSVViDbu+PQ4bLIJL2aWpRRSTuIKROALhWMZrtRgwkZqcxSBw1jxDrzsPkEyomTlW30Lcb5KFePSkH++39cEiAR8/tZ7fAA2EY+gPRfnvSJZl/Ntvt6TMO73u7Gas/PScjO8Tisawt0O5AWQWoiRJOH9aHT7q6MeBzvQlKKIlnclCZI0uZieEdziQk4XY0dGB5cuXY/r06bjkkkvw9ttvY926dbj00ksBAIcPH0Zra/IO4vjx45g3bx7mzZuH1tZWPPjgg5g3bx6+/OUv822OHj2K6667DtOnT8fnPvc51NbW4q233sKYMWNM+ojFJ1OWqV4NYjb7C8eMskw1/SLD6izTTFao227lYnFyIMxrEPV6CCrTzxOxIBMyTcWifEBZZJkGG7VvY3E9vTpE0R2ttW7ZgpxNYb744xW7v/iCEf4jz2ghJtxrhXarEUd4sc/UIwhibyDCs17nT1SKwMsTXXpEl2kwbHyDVOESk2pSY4jqpJpY4j1saEq46o7oWIja61u7L23cMJduNR+09eH7f9md0WWXDQd4hmnmrEaWWHOsJ9VCjMTi/HtItRBzjyE+u+0Y/uWxt3Tjq6++r3gtFkysQXW5A+VOG/ceiFbiib4QTvojsEjAJTPqMXu8F5KkFNe/+VHm3qd72/sRicmodNtV/ZZZ/D7T5JVcYojMNTtnGAliTrf7jz/+eNrnN2zYoPp70qRJGU31tWvX5nIIw5JMWabcQnRmTqgBklmm2l6mWpepM0+XqSRJqC5zoM0XRI8/khQpb6ogAsrCHIzETXGZHhcSagAlduNx2NAXUgraxXgYI6xJqlFNk0+cE7tVUrVrA5IWYjbHLS4qB7v86OgLor7ChQ8TSRNjK12qsVh6sM/UH4rCF4ykWKzZIrbfYzcBYgxx34l+yLLyfux8MVel2L4tXQyR3VS19gb5+a0td8JtVx7XS6opc1r5lI8jgsXUr+lSw9BmKOsJojj1JR3f+tO72Ha4B801ZfjSeZOzeg0AHO7y44l/HsTnzpqAGY2KaDGROmVMFhZilXEt4v4TAwhH4/AINwoMZn0e7w0gGInpfgciXf0hfOeZnRgIx/DynjaVhwIA3kl0JLrg1GSNdr3Xib4TUbT7grxk4WAi43V8tRuPf/EsAMBdz+3CbzYewl3P7cKLt13Arcsj3X788K978PHp9TxOyOoPZ43zqrxFle5EeVQaQewNRHjHIkC5UTL67B19QbT5gpCk1PjrUEK9TE3AniHL1OgO2giHgcCKWaZAssMNW3CyzTIFktZWt1+0EPUXJzPbt+n1TPWk6VajZH4ad6oR3aWp7t7sLcQOTbYec0m+15Zd/BBQkkjYd1NIYo34PXILUXCBsZsK8Q6eucz8Okk1+lmmieNMfB/lDivcDquQZZpah1jusPHi/cM6LlNtBrXoMg2EY/x42HGLvXTTcbjLj22J0UBG46f02HGkB5/6nzfxqzcP4N//7x2e9LZfiCFmgiWv6AkiE4/TxlaoXMWAkoBU6bZDloGDXZmtxEf/vp+fZ+21CCSzScXmCayJhrj9wcRnmySUB31t8XTUeRzYd2IAj79xAIAihtf+4i2s292O7z67Cx919Cc+k+IC1roxWUJbulFkzDqsLrPzkhttW0AGsw5PGeMpOAxjJsPnSIYaWQYi+U3HtscDcCMIe8wChFMvfn+/D24EUeuI6j6vxWMJwY0g5FC/avuwvw9uBFFljQDhAVRaw3AjiHCgDwgPIBLshxtBVFrDGd9nrDuOQwiiz9eD7pMn4UYQE8rjuq+rskVwEkGE/H1AuLBLpivxXk0e8Peqc0TRgyAG+ntT9h+JxuFGkB+HG0EgDkQCfbBbLej3Kee23mVNOfYKq3Ieo8H+jOfj5Mlu/j4AsH3fMVw23Yt9R9vhRhBz6u1ZfXeTvMCHgSDau7owvSa/+032PVfb3RjjisKNIAb6ffz9O7qUY51cCf5YtV05N4EBHxBOxH7CA3AjijKEUo7dm7h2GBM8Zco1ZVMejwSS5ywaVI6n0hbBxAoZbgRxsieEaKAPNqsFA/z6jqjep4rtK9iPk73K9+6wWnBKZRm6e4Lw+XqAcGYL8cVt+/mxdnR1Z/U9vPZBB772hx0IRGJwA2jtDOKPb32IZXMaMdDfCzeAyV5k3FeTR/m83T1hxIP9KuHbe0S5Nk7XuTYkAKfVWbHjSB8OtZ7AjBpjC7GjL4inNr4PNxIdfXpOpuyv19cDN4JodCV/o+zYuk6eBMJVAICjHZ1wI4hTq5NrUaUV+O6lE7HimZ14bP1OnDXOiW/+8V109wbgBoA48ODz7+CRz8/H3sT1PrfepjqGGrtyHQb9fYbnrLWzC24EcUqVE939EbT6gujqPokJ5amGwnuHlPeZP7YmdX/2smTngUFGkgdjtkeR8fl8qKysRG9vb/41ieEB4EfjzD0wgiAIIje+fRxwZLbejShED8hlShAEQRAgl2kSe5lyZ5IHfcEIzv7RegDAtu9dmhJE/uHze/C7zYdx0wWn4LZF0zLu764/78ZTW47gPy6ehps/fgoAJU44796XAQCbvn0JvC477vnzbvx+yxHcctFU3HrRVHzvuV14eutR3HbJNNx04Slp3+Ph9XvxyOv7cM2CJjz9zlHE4jI2fOPjaKhITay58Ym38c/9XXjgM3Pxibn5W9HBSAzzf/gy4jLw+jc+jvrEe/3n77fjpd1t+M5lp+Hz50xUvaa1N4CL/+t12K0S3r17CRb88GUMhGNYd/sFaK4pw2/fOoQfvfAels5uxP/3uTNUr/2vv32IX76xHze0TMK3lqUfKfbV327BP/Z24t4rZ+GR1/fjWE8Ad18xE9//yx44rBZs/e4iXm+ajkde34eH1+/Fp+aNx48+lTnNXY8n/nkQP37pfXxi7lgsmFiDe/6yGxdNr8f/XH8mAOBT//NPvN/mw+rPn4mPn1oPAPjRC+/ht28dwlfOn4I7Lj0VvYEIzlmpXJM77lrMEylEzvjB33h89bMLJuAHn5yNR/++Hw+98qHq+D/36EbsPNbL34+dqx98chY+u6AJ3/rju3hux3HceN5kfH3JdL7/n7z8IR77x34sP2cSZo2vwDf/uBMtU2oxZ3wlfvGP/fj8won4zuWnpT0X7Ds875RaPuVh87cvMez41Nkfwvn3vwZJAt69azH/zp7bfgzf+tNOvh37vNnwhcc3Y8uhbjz42dN51xZ2XdosEt7+ziLdxJF1u9tw+++3Y+6EKvz+q+fo7pv91s+eVIOvL56Oz/1iIxq9Lrz29Y/zbQ52+bHs4b+j3GHFlu9emrL/M5ur8bsvL4Qsy1hw3yvwh2N44T/O142R/umdo9i4vwtfXzKd/9Z7/REsefjvPB5/RlMVnvyK+nhP9IdwQeK87rp7SUrMFABuW7sNf9vTjm9fdho+bO/D01uP4taLpuGWi9RrUUdfEBc+sAGSBLz97UWpMUT70I2AIkFkSFLeZrpdiiEA5eKK2soATVJLd8SOAFxwlVdk9R6SvQwBuBCAk2/vCwURgAuSBHg8lYBFgtXlQQAu9MeV7XqjDgTggt2d+X08FZUIwIU9XTH0x52wWiTUVdcAOhe65CxHAAP8ffJl25EuDMguNHpdGFNTw+MEzrIKBNCDnqg9Zf8hCQjABavNpjzn8CAQDsGfODfdYeXcusu9Ka+1OMuV8yM7Mh730X4LAnChtqYGcyYH8dG2Y3ji7RMIwIUpDV7Y3Nl10hhTU4MAXDjcl//15Isp36PN5eHfU2fIxvd3wCcjABfG1tXxx5Rz6OLnMBhUrherRYLd7dGNydhcFehJJD1UeqsARzkcbuWa6o0lz1lX2KZcv2XKOW6orUVgbz8O+IBfbzmBtTu6AbhwxinjVZ/Zlrg+fXE7ToSU76m8ohIVXuUzdYSsac9RPC7jT7tOIgAXrj5nOra07kSPP4JjfgtmePVf1xlWfos1ZQ7Vd/aJBdOw+p9tvNVaU/2YrL+fMTXVCBzy41Af+Gt2n+hHAC7MqK+Aq1zfLTdx7BgE4MJ7nVHI9rKUpK/DXX6seacTUbhw69LTMaZa+d0f7pcQt5Vx0WkLKN/lWG+56pjraqoT2yvH1eELoitsh0WyY3x9HaBzE/Tpc6bj0xptrnQAN186F3f/WRnjN3V8Q8q5qfS6lTVOBvriTlTq3JAc8Cm/1YbaGnQErQigE62B1N/Bzg7l3E0b40F5xfApuQDIZWoKNkFE9Nq3+XRGP6VDrw5RnHTBfijatPZ0WYVaasqVY2Ezy+ornIZ9Ol2a8o58YVOxz5pco1ocWIZkn04/U2bBMAuHjaNimZi8FEXn3Dp5Fm4WWaaJXpX1FU4sSBS7v88zTLOPQ7BaRKNuNbG4nHaQNCA0WLDbeGYty+4bCEV5xinrnQqA32WzEohsGr2LjeZrE92L9OoQ/UKWKQBeevHc9uN8Eb190TQsEhpka/fFhgPXlNl5+Yq2eFzL1sMncawnAI/Thotm1PPs1HQT7Dv7wqrPw7BaJNy5NGm9ZpNhyuC1iML7GhXki0yqLYckKb9/vdrCx/6xH9G4jPOn1eGsSTWo8zggSco10qUziabeqy5JYh6Wdl8IsizzDNMJ1WW6HoF0/MvCZt6rdl5zVcrzDpuFrzdGtYgsE3dCdRkvB2Lfh8jOYVh/yCBBNAFRSPTat+k1Pk4Hr0MUFs5klxqd1liaaRfZtIdjixIrCdHOQRTRtojLl80HFZfX2YmJ4gyP0DVFC6uRYzWF/CYg8Vn1zgvDlWXZRTQW5wtQfYULZ01SHx+bYpANyRFQgZRxTL3+CD7532/ggvtfS5lKL8K/R0eylR77nKzkosJlU91gMUFk78lrENPcHInXI2tXxkp2VGUXbLxWoviftW9jxepfPHcSbrskNRQg3kix4cA15U5+M3YyQ4Pv57YfAwAsmdUIl92aFESdInlG10Cy646Wi6bX4/I5YzG+ys1verIh2a1GEESDlm0iLruVXw/ajjVd/SH8YYsypYeFRWxWCz9usS6WlVVof6NMIMPROHoDEV7eMSkHsWfYrRY88aWzcO9Vs/HJ0/XDItprUcQfTor++Go3/xx63Wp2DcMONQwSRBOQJCnZ4FunfVuudYh6rdv0LCGt5Sa2/MpEtabIXDvlQkQ78aLXH8El/7WBD1PNhkgsjncO9QAAFmoEMd0IKNalxqERRPaZjRp7A8K0iwxC3tkfhiwrNza15Q5MHePhlhmQuam3yLgqN+ornAhG4rjp/7ZyQQ9FY/jqb7dg93EfjvcG8UGb8Xgz9j2W6dQhMjEQaxABwMM71WhqUtPcHImCWutJWIiahvGyLCfrEBOiK9bCfXreeNz1iZm6VqhbqEPkFmK5aCEaC2IkFscLO5XRQFeeoSzQesKkhXVHqdNp8CBJEv77X+bhjW9elLHJgkiyFjFZlrW7VVnU01mIQLJjzQFNx5pfbzyEUDSOuRMq0SIMnWY9SsXpGkwctYLotFlRk7CE230h3lZtUm1+MbgJ1WX4wjkTDWPlya5Jqd8bv1FzKtcssxD1utWwHqZzJ5Agjlj4CCg9CzGkX7hshF5hvt7CrxWHbKddAECNZkFIayFqeqa+ua8T+04M4Pkd2Sch7TrWi0AkhuoyO6ZqWmZVpBkBpbUQtTcBRqOfAGEeYgYLkS04YzxOWCwSLBYJCyYmLYhcOvE7bBb8YvkCuO1W/GNvJ+58egdicRl3Pv0uNh1ItoRLV2Cuat2WEOZQVOkUxIYPawWxzKE+h8E0fUwZ4g3amMQdvXb8UyianHLCnpvR6MWy2Y24fmEzfvyZuboJFuL2wUiMF+HXlDv5tZfOQvznvi50D4RR53Hg3FMUwWDClNZl2q/vMmVIkpRzI2mxfZssy3hjbyeOdCvHkOlmifU03deZbPLtD0fxm40HAQA3XXiK6niYG1QstmfTYep1RJ491uYL6hblm0k6C5GN02I3Lex60hbmd/iC6OgLwSKlt66HChJEk0jXvi2X4cBA0kIUXX2+QOrCz+Jp+cQQq8rVApKNhcisBhZbSzflXguLHy6YVJOygHrSjIBKjSGqj6WXxVZ1BDFbC7GDLThCjGZBwm06psKpmn6QDWc0VWH158+EzSLh2e3H8YmfvYHnth+HzSJxcdWbOs8Q5xh6HDae5+QLRPiduLblmUfrMg3n5zItYx1vNCPFlONRnrNaJKz+/Hzc96k5/FrVwyWIK5tuUV1u596JgXDMcFblut2Kdbh4ViO3WHgbtXQu0/7ksGOzGFvphiQpHpIXd7Xhy795GwDwydPH8ckxRkxPxJ+f3HQYWw8pv4Hfv30EPf4IJtaWYcks9RzA5BQLQRANLETxsXZfkLtMc4mP5gK7OdMTxGM8fqh8R8xC94djqtDBTqFDTVkWHbUGGxJEk+ANvjXt25Thqfkl1YjxyOSII2EAq01tuSUti8wXWoXTpkoG0mvszdBaomw+YH8omjFBhMHGFWndpYB68oKWELcQlWMo01irScs59TNn27otmVCTPAdLZzXC47TxNPtc+fj0ejzw2bkAkolLKz89B5cl9peVheiwwmKRVA2+jxkIolEM0W03/omz69EiAVWJ9+CJMInXs/257da0w5H1KFPFEJnlpoz8Yvvq0UmsicdlvLxHGXUkCkYyucX43PHZjp7sXaKZcNgsvETh1jXvIBiJ46LpY/j3m46r5o3DgonV8AWj+PwvN+PV99vxy38o7dO+cv6UlHPKE2UElylzO+oLYkJAe4M4lOhjOjFPl2km0lmIWld+ucPK1w3RbcrcpXOGobsUIEE0DSYuWgsxEMltODCg39xbz2Xq0ixe2Tb3BhTXkRhHMWrsDSQnnzMRYh3+gfST7hnxuMwtRG1CDZC0bvT2xWOI1vQuUz0LUXvcRrC7cdFCnFRXjp33LMY9n5yV9rXp+NS8CbjnipnwOG34xpLp+OyCJp6hyRYvPbTxP3EhSgqi+vtiMcR+jSCmuwtn12NNuTMlc5kJIRsDxRJqcoGPkgpF+UDg6nIlS5oJsF4ccduRkzjRF0KFy6aKrzFB7OwPG36nSZepeRYikHQFxmXgvKm1WP35+fyGKx1lDht+e+NCXHjqGAQiMfzrE1twrCeA2nIHPjN/Qsr2yf6kiiDKspzMMtWxetn27yZCElaLpIrxmklaQdS4TCVJSmaaCm7T4TjhQoQE0SSMRkCJw4GzESoAcOok1WgbewPi+KcYZFkWkjGye59qIXEkGwsxGInBH46qrBtWDpKOD9r74AtGUe6w6iYhpLMQeQzRrk6q8YdjiMdlLgB6MUS2YGkHLWs50ae/4JgxtPSL503GjrsX45aLlPmfbLFK5zJN3tgo56UycePS60+6TJk4MLiFmLgWsoshKudMtKbYtcNih+Lop1wRLQTmOGHuUuZq1CtHWLdbsQ4vnlGvKh+odNtRnjg+o0xTPtvRRJcpAB73PntSDR5bviDj9AoRt8OKx5YvwCfmJr0NXzx3ku4+2DXIbtL6Q1F+g6Qtu1AeU363zAMzodqd1o1dCOw3pjfxgiUcja9KijG7rpiFKMsyth/pATA8E2oAKsw3DZtBlim7eDzO7IYDA4DdpmwX1ssy1RHEYCSOUDTOF51sh66K8Y9skmoCkRg+bFdGD2mPKx3sx3rmxGrdDDaeZRqKQpZl1XniMURrapZpXzDKj0XP+s52/BNLYKjX6dJjBqJbjFmIrb4gQtGYrpXhj6izhdlC1O0P82khRi7TWFyZDsIW0XQLN0s8Eb970aIMRJLxn3ziPez42XXpddn4Ys1uxrQuU1mWefxQG1+TJAnjq934sL0fx04G+Mgj8bXMQjTTZQoAX1t8Ks6cWIVPzB2X17lw2Cx4+Np5GF/txp7jPiw/d5LudtxCTNykMWGscNl035d5dth5nFikhBogO5epeKPGM00TNykHu/zoGgjDYbUMy5ILgATRNJIuU81Q3xxLLgCDsotAagxRFCpx0c+mDhFILkrVZfa0C6dYdsHih8njyiyILLtSL34IJF2msbiMYCSuEvSkhag8xjNewzEuxi67RVdYsh0QzOI1DTp34GZTlxjC6w/HcOxkQHdILRv4XKYRxL3tfYjGZVgtUop4lwuLZX8oqqplNGLRzAZ85fzJuFxox+eyWyBJyvAXfzjKvQ7lWd5kiWivQzE5iVmKWgvx/bY+HOryw2Gz4MJTU4eEj69SBFGv9MIXjPKbSL06xEKo97pSZhTmitUiYcWy9K3q2DV4oi+EWFzmrlOjG1btNTu5SPFDwFgQw9E4T0wbryOInYnntiZmOs6ZUJmVu3koIJepSRi7THMruRD3JYprr14M0Sa6MpOxtmx6bgLgNUxGcxD5+wiu2fc19XOZLERZTsYPtQXvjDKHlWdSajNNtRaiGEPUcyOLMAsxY1JNkS1EEUmSuJVolFgTCCcTWYBkwgvrjtLodaUkY1gtkir+l43L1OO04TuXz8QZTVWq4xNd8QW5TDUiKrromSD2aGKIzDq8YFqd7nvy0oue1HPH3KUepy0nl+ZwotbjhEVSrOqu/lDGmzWtUOZTlJ8tRoLY2huALCs3U2K5i7Y4n2XZiiVNww0SRJPgZRcal2muRflAcvEXLUR2Jy26OV2Ju/+AIIjZukuBZLeaxgyWkRhD1BaU67lPYnGZWygHu/w40ReCw2rB6cLCKyJJkmH7NqMYYiAST1uUD4iWrbHLNBaXedBfL0ZTDNLFEWVZhl9TPsMWovdalXM/vlr/BkZs38azTPNw75XxbjWxgpJqXBoroEZIdEnGENXXD4sfLta4SxnjddqoMYrlLh1MrJZkMkq7L5TsUmNws1Zb7lC1Hy6mIHp1hlUDyUYJ46rcqnCHtjifWYhnDmNBJJepSRgV5udagwgIvUwTYiDLMr/LGiO4gpg4yHLyTjvbhBoAmJboXZipQFaM273fplgpU8aUY/+JgZSkmmAkhsX/399xuNuPqjI7d+Wd0VSV9q69wmWHLxhN6VajzTIV+2OmyzAFkhZiNNE/VM9y7hpQEj4sknExt9mksxBD0TiPi7KbG9Y1h7fGqtIXRI/Tis7+5IR6IHv3uYhYnM8sxHziZhaLBJfdwjsc1ZSLFiJbXJMW4pFuP95r9cEiAYtOU/dFZfBaRF1BVH4judaNDjfqK1xo94XQ7gsKGdD6gsjavTGXZbGK8gFjC/GY0MNUZAy3EMPo9UfwYbvSnGA+CeLIh7dui2ktxHxcpuoSjr5QlIujWHAsCgzrxZmLhXjVGeMxtd6D6Rk6sbA4VEcirmGRgPnN1YogalycR7r9fKHv8Uf43eT50+rSvge3EIMZLEQeN40KDc/1L2OnUIMXiuoLIrsDr/U4s3Y1F0o6QdQrhNcKvrbkgqFrIaapQzQiKYjJGKInD5epsi8bghHl2tS1EAVBZO7SsyfXcHe+FrFrjJauItQgDgUNXid2HlN+b9nEtxsrXejoC8FqkVKyj82E3Zj1BaOIJWLZQLJRwnjNdVknxBDfOaJYh5Pryk2P75oJCaJJMAsxEte3EHNKqrGpY4jM5aCNjditFtitEiIxmbfBysVCtFgkzJ1QlXE7FgBn9ZSTast57EKbVMOsmKYaN365/Cwc7wnAH47hktPq074HOz/9If0YolMbQwxnE0NMnotQNA690rQOg5KLYpIUxNRFnQmZw2bhC05ViiCmd5kOqJJq8q8f9IdjvKwll+tKtS/helVbiKkTL/62O7UYXwtzmbb7gghH46qyjBPcZTp8F9xsqBe6z3TwGkTj+LbyXC+ailhyAah/Z33BCA+5tBr01+UWYl8IWw8m3KXNw9c6BEgQTcOW0ULMP4bIsrT07nxddisisSi3EMuy6FKTK9pFdXpjRbImSWPRsQVujMeJ6Y0VGa1PhtHEi5QsUzGGmMFlarVI/IbBqEWY0SSBYiLGELVlJtqEGiBV8I1dpoIgRjKXXRghuqX9BSTVKO+fXKBFC1E78aLXH8HWw8qiaeQuBYC6ciccNgvC0TjaeoNoFrIqR4rLlMULO/qSLtN0FiJ7rpglF4ByA84ypHsDSUFko87GapLzmDcrHIvjtQ86ACCnKSNDASXVmIRRlimfJZfDgqItu2DJAnr9GdmC152HyzRbtHGo6Y0VvPxDayGyziPaaRqZMHKZamOIYqPxTEk1QNJKNJqJyGM0g2ghMrdWfyiaMhNQr0F7ZVl2gph0mcYEl2k+5RI6STV5Xldi7FG0ELUTL/7x0QnE4jKm1nvSdlqxWCShp6na5cz7mJa4y5Qld7X1BtP2MWWwXIDB6P6iF0ds7dGvjXXZrbxx/+7EuKzhHD8EyEI0DV6HqMky1ZYNZAOLITLrKNmfMXXRdmsEMV/XVjq0VsaMRi/kROaHNobIBTHHBBWxOF+E1ZWlZJmGY7r9XVOP3YL+EIwtxCFwmbrsVjR6XWjzBXG426+Kl+llC1e5NaO60iTVAGqXaT7JMGIMkRfm52khql2mgoUozOOMxOLY8MEJAMBF01NrD7VMqHbjQOdASqZp5whxmTKL76MT/Xz9SNes/LqFzZg8xoOzDcqazKTSbUdrb5ALoizLhu0EAeW4Wea412VLmXQz3CAL0SSMLETt+KJc9sXEgM94y0IQ87EIMmG1SCpBn9FYwd2U2ixT5gKrLss+iQgQY4gaCzGi6VQjNCPIFEMEhAbfBhYiy84bM4guUwBCT1P1nDy9iSXi56t02w0TXFhGr6oOMU1hvhGiy5TPQsxzMoE4bUMcOeZ128E8xScHwlwQPz49fawZgOGg4JHiMmXxQjZiqipD4wynzYoLTx1TFO+QFq/GQuweCHPR1mv/KLbQO3NiteGosOECCaJJGI1/YqLmyEEQHZqkmnQWIltwiukyBZKxILfdiuaaMu6mTLUQlb9ztRCTLlNNF4x0FmI2LtMMDb55J5BBtBAB41pEbtkJsWCX3cKvCSN3KaDOMs2mdZsRvA4x0btW2XeeLlPRQhRcmVZhiscbH3Wisz+Ecoc1qxiTUelF1wioQwRS3aNGNYhDgdZl2ppoJVjncep2nxHLxIZzQT6DBNEkeB1iXN9CzEkQE9ZQLC6rCsf13CYsrb6YLlMgKbSnNlbAYpG4m1Jbk5S0EHN1mRrEELmFqE6qCcfiPGXfKKkGyDwCKjkLcWgsRG3pBRcy4XuUpKR4GGWYAvpJNQXVIYaiBXWqAZLXjcNqSYlDMovxmW3HAADnTa3LqqXXhJrU4vxgJJkRa3Zj78Gmttyh6kQ0WA0jsqFSU5x/zKDkgjFGYyEOd0gQTcKoDpELojX7hckuiGckFhfSyVNFJsVlWqShm8zSmNGgZI0yq8wfjqms4kKTalJcpjG1y1m0gFmGaHqXqbGFGI/L3B09mDFEAGiuVRZ1rSCyLNMyjZCxz2i08ABAGR8BFRNcpoWVXQwUWnaReF1NuSOluT2ra3vzo04A2blLgeREBdFlyr5Hh9XCEzlKFYtFUllWg5kBnQntxItWg/mcDCaIVoukahE4XCFBNImky1RtIYbycJkycVX2F0+WXaTJMtWLPZkJE15WRiGWkYhWHXeZ5hlDTLUQk3V5gDoW28+D9cbvxVy9ehZitz/MLXozJ6xnQzN3mardfnpZpkCyFjEbC9EXiPDrsCALUWgJmG9hPnt/PRc6SyZiTpWPZ5FQAyg1roAiiEz4WdlRnSdVeEsRscxisG/W0qF1mR5PuEy1JRcMduwzx3rzSvAabEgQTSLpMjWwEHMRREty23A0rtu2jaFd8IoliGzUzjmJga02wQUmll4wC9Go04gRPMtUW4eosRDF5tOMdFmmWpfpu0d78NKuNgQjsWSXmnJHUQua9WiuUWrGjvcGVPMaAwaWHbsRMeoHCyQTX8SBrPlYiCqXKZ+xWZgg6rXFEwdUT2+oSCv2Io1eFxq8TsTiMnYk5uulu2ksRUQX/nCyEJlVzwUxTYYpACye2YhPnzke31w6Y3AOsECGv2SXCEmXqTaGqK6jywaLRYLNIiEal3HSH+YLZrqkGkYxskwB4CfXnI5vLZuhqhHzuu0YEHqKxuIy/6FUmeUyjaTeUJQ5rFw4gPRt8USX6TuHT+LaR99COBZHhcvG67YG2zoEFEvGbVc+x7GeACYnmjIb9SC955Oz8NULpqQtvmZxPnYDZZFyu+4YzO3ePRDmfVXzTqpxZrYQAeDjM7KzDgHlpmjBpBr89d1WbDl0Egun1CYzTAepH22xES3EwRhLli0pFmIGl2llmR0/+dwZg3JsZkAWoknYdEY2AfllmQLJ0ovjiaJXj9Ome7efaiEW5x7HabOmFExXakovegMRvoBW5egyZZ1qtFmrSQsx+TnFzMkKpy1lFJII2/ZItx83/XYrwrE4XHYL+oJR/HNfF4ChuQM3GgNl5DK1Wy0ZO5Fomxu47da83Icsfsnq+iQp/xutxTMbcfbkGnxuwYSU58Rr5KIs44eMsxIJGmz4dNJlOnzEoxDEVm2DnfCVDm3ZxXGDovxShSxEk7AnFmUjl2kudYiAYnEGIsk7MKNU8sFymeqhLb1giT0VwmT0bBHrEMV2ZtoYIqB2A6bLMAWS5/2xf+xHXFZcc0/f3IJdx3x4eutRbDrQhavmjUu7j2LRVFOGD9r7dAUxn+QorRWXbwkOs+qYpVnusOUdl5ta78Ef/q1F9zmWZVrhtOXcwWRBogh966GTiAnJUSPFZaq2EIePIIoWYiQW540tjFympQYJokkYWoh5xBDF7Y8LdT56uDTTDAZzMKq2fVtPnvFDAKhwKj80ZVJ7jLv/tDFEQH0TkKlHLDsfcVn5Mf9i+XxUuOxoOaUWLafU5nycZtKsU4sYLCA5Spv4ku+1wLwM7Not1k3WgknVsFokfHZBU843UDMaK1DusKIvGMWH7X0jzmUqWoV6uQNDhSiI7b4g4rJy816n1zm/BCFBNAmj5t7hPFq3AUmXKUtrNopzaRe94WAh5ho/BBRht1okxOIy+oJRlDttkGU5Oe3CQBCztRAtEvDzfzmz6A2Qc6E5kS0pdqthhfD5WHfaWsF8rwXt6/LNMM3E1PoK7P7+krwSmmxWC86cWI1/7O3EloPdvCh/KOLBxaAp0e+20evK+Wa6mDBB7AtGeWOEsZXuYd+BJluGz5kucexGhfmFxhB7mctU/4euXTgHVRA1MURWrFuTY/wQUGJq2hFQ0bjMY5KqGKJBWzM9zptah6oyO35w5Wx8LMNMxsGGTWoQx0D5CxzsK3o28437pbjh80yoyQaX3Zo2BpyOBRMVt+nbB0+m7eZUikytr8C9V87Cg589fagPRYX4e/ugrQ8AMFanZVupQhaiSei1bovHZe5CzV0Qlf2xTvKGgmg3J26UD2wwL+9rmGdj7+T+7OjxR/j+xNpBVZapaCFmGLx80Yx6bPvepcOyNq1ZZwxUIfWkkiSh3GHjmbr5u0wHJ1GrUM5KtHnbeugkt6xrS7xtm8gXWiYN9SGkII6Aeq9VmWCRrp1gqUEWoknYdJp7h2P6C3o2pFiIFdkm1Qze4sUtxITLNN8uNQwmpMz9FTYQRHVSTebPOxzFEAAmVCuCKI6B0pt2kQtiYk3eSTWaa6hYLtNCOaO5ClaLhGM9AX7+RoqFOJxhViITxJGSYQqQIJqGXpapShBzjJMk6+cS41+MkmqG0mXqUrdxYn1M80mqAZIJEUxY2cgmm0VSudVEyyeTy3Q4w8ZAAcnSi0LGNgHqOGK+LlOX3aJyvQ7mNZULZQ4bZo3z8r8tUv43Y0T2sN/cB+0Jl+kIyTAFSBBNQy/LVGXh5JlUwzBKJ3cJsTVJyr28oxB4lmmi7o3dpedag8hgixmrKTMqWXHn4DId7mhrEQtpyg2orbl89yFJksotne/op8GAxREB5UYs33gkkT1MENnNOlmIRAq8U41oISYWdLtVyjkLSyuIRhai6BYry7MQO18MLcQ879JZ/Ke7n1mI+glJ4oy/TFmmwx3W7OBwItPUHy6smbYoXoXEk8U6yHwnXQwGZwnjoshdOjhovTLjDPqYliIkiCbBepnqWYj5tM+ya0Qgm6SaYk26MMIohphP2QWQdLV2p1iIxu3pvBnqEIc7ooUYj8v8rjv/GGLhFiKgFuR827YNBvNJEAedFEEklymhRa8OMd+SCwBwCBMvjNq2AVpBHNyvU9u6jblM840hckH0p7cQR0oMEVCPgRL7s+ZrIXpMSKrRvv9wzTIFlBZnkxLlKyMpw3Q4I/7mKpy2tL2ESw0SRJNIukx1LMQ8BFF0maabAO4SRFCcsj4YMJdpIBJDKBrjnWpyHf3EYK5WZiGypBptDFFcoEvdZcqmXhzpDqgE0ZXFoFw9RAuxkK5Foph6hrGFCCTbuA2nMUkjGVEQR1L8EKA6RNPQc5kaWTjZoBZE4x+62kIc3IXLI7grj54M8Ll2ebtMPfplFyM5hshcpsd7A7z+0mW35N35w4ykGqB0LEQAuOnCKYjHZVx3dvNQH8qooLJMFMSR4y4FSBBNQ9dlWkgMUXhNunZUohUw2OnxVouECqcNfaEobz/mcdrybjVVW661ELPJMi3tS1gcA7W3vR9AYQJUZlZSjV1MqhneFuLU+gr85JozhvowRg2ihTh2hFmI5DI1CSZgKpcpjyHmvqA4bEkLIZ2FaLdaYEtYE0NRL8YstIOdStlAdXn+FhuLIQYiMQTCMUMLkd0EWKThWzSeLeIYKNYKqxDLThSvQq4HdVJNaZ9jwlxEr8xI6lIDkCCaBhOliJ6FWESXKZBcQAc7yxRITptgdXSFFEZ7nDYei+32hwULUT/L1Ou2D9suNLnASi8+aFc6fxQiZB6TYohqYSVBJJJUiRbiCOpjCpAgmoZdr3UbW9ALdJkatW1jsG41ZQUsgPnCLcSEy7QQQZQkKZlp2h82vKFoqimDRQJOGePJ+72GExMTWZLvJyzEQgTRrLKLUnKZEoMLJdUQGbHpFebHUofbZosqhpi1hTgEgpjIND3cxSzEwpJcasqdaPeF0DUQMswyHVflxt/+88K02belBHOZHuxUbioKsexUSTVmuUzJQiQEKsllqrB69WrMnTsXXq8XXq8XLS0tePHFFw233717N66++mpMmjQJkiThoYce0t3u5z//OSZNmgSXy4WFCxdi8+bNOX2I4UDawvx86hBtooWYXhDZkOAhEcRE+7YjJ1kMsTCREvuZpjt/U+s9eWezDjeYILLw87CwECmGSBhQVebA+Co3xla60DiaXaYTJkzAqlWrsHXrVmzZsgUXX3wxrrzySuzevVt3e7/fjylTpmDVqlVobGzU3eb3v/897rjjDtx999145513cPrpp2PJkiXo6OjI/dMMIXaTs0zFwvxsLcShcJmyu0V2I5Bv2zaGOPHCKIY40mAxREYhMTszpl0oxzB02cvE8MZqkbDuPy/Ay3dcmNdw5+FMTp/miiuuwGWXXYZp06bh1FNPxX333QePx4O33npLd/uzzjoLDzzwAK699lo4nfqL+k9+8hN85StfwZe+9CXMnDkTjzzyCMrKyvCrX/0q908zhPDm3vHBrUMEki62oXSZMqpMshC7B8KGzb1HGhOq3erBviYl1ZhRh2izSCP+/BO543HaSj7DW4+8r/RYLIa1a9diYGAALS0tee0jHA5j69atWLRoUfKALBYsWrQIGzduNHxdKBSCz+dT/Rtq+Pgnk1q3MUFM17aNwRavoXBtaQvjC7UQxX6mRjHEkYY4BgootOzCLJepsp8yx+A2jCeIoSTnlWbnzp3weDxwOp246aab8Mwzz2DmzJl5vXlnZydisRgaGhpUjzc0NKCtrc3wdStXrkRlZSX/19TUlNf7mwmzEOMyEE9YiQWVXSRek03iyDVnNWPh5Bp8fPqYnN+nULSF8YUn1aRaiPkW+pcSotu0EBdlpdvO/3kKaFpQPoQ3WQQxVOR8tU+fPh3bt29Hb28vnn76adxwww14/fXX8xbFfFixYgXuuOMO/rfP5xtyUbQJMb9IPA6nxWpKDDGbDv5LZzdi6Wz9GG2x0VqIhSbViILI/n+kW4iAkliz+UA3gMJcpnarBc/dch5kpI4QywU205IG7hKjiZwF0eFwYOrUqQCA+fPn4+2338bDDz+MRx99NOc3r6urg9VqRXt7u+rx9vZ2wyQcAHA6nYYxyaHCbkkuPtGYDKfNeMBtNsweXwmX3YKPTasz7RiLgTaGWOgCOlotxGaTLEQAmFRXXujhYF5TNb6++FTeOJsgRgMFrzTxeByhUCiv1zocDsyfPx/r169X7W/9+vV5xyWHCtFCZMX5hcQQZ42rxLt3L8Hti0415wCLBCu7YFQV6DJlSTVdA8ks03ws7FJDFMSh6DikxWKRcOvF03DOlNqhPhSCGDRy+uWtWLECy5YtQ3NzM/r6+rBmzRps2LAB69atAwAsX74c48ePx8qVKwEoSTN79uzh/3/s2DFs374dHo+HW5l33HEHbrjhBixYsABnn302HnroIQwMDOBLX/qSmZ+z6NgsapcpUFjZBVAalpFoIZY5rAUVlQNJC7E3EMFAYnq8cwjKSQab5lpBEEfB5yWI4UhOgtjR0YHly5ejtbUVlZWVmDt3LtatW4dLL70UAHD48GFYBNfh8ePHMW/ePP73gw8+iAcffBAXXnghNmzYAAC45pprcOLECdx1111oa2vDGWecgZdeeikl0Wa4I0kSbBYJ0bictBBHgctPjCGaEW+qKnNAkgBZBtp9iudhtFmIVPdHEENDToL4+OOPp32eiRxj0qRJkGVZf2OBW2+9FbfeemsuhzIssVkVQWQNvkMFuExLhQqnjQtYIZMuGFaLhCq3HSf9EbT1BgAATvvIPX+M2nIHyhxW+MOxIaknJQiCmnubCkusiZpQdlEqWBIzEQHzMhJrePs2ZWDuaLAQJUnC7PGVAIAJI6w/JEGUCkMfvR9BaIcEFxpDLBW8bjt8wahpglhb7sS+EwP879EQQwSAn//LmTh60o9pDRVDfSgEMSohQTQR3r5tFMUQAZZYE+CWXaFoXa8j/YaCMabCiTEZGrkTBFE8RsdKM0jw9m0syzQ2OnpxstKLQksuGDXlalEYDTFEgiCGHlppTGS0Woi1iW469RXmjIKp1Viao8VCJAhiaCGXqYkYxxBHdgzs/108Fc01ZfjE6WNN2Z/W9eoiC5EgiEGABNFEUrJMR0HZBQDMaPRixlKvafvTCuJIv6EgCGJ4MLJX6kGGWYgRrYU4wgXRbLSCSDFEgiAGA1ppTITFEFmnmtHUi9NMUi1EOn8EQRQfWmlMJCXLNDHglizE3Kj1kIVIEMTgQyuNiSRdpuoY4kgvuzAbbYE/WYgEQQwGtNKYCBvIGtVOuyBBzAmX3contlstEndFEwRBFBNaaUyEjYCKxGREY3Ekkk3JwsmDmoTblM4dQRCDBa02JiIm1TB3KUAWYj6wbjUUPyQIYrCg1cZE7NZkUg1zlwIkiPlQk2gDRxYiQRCDBa02JmKzJFu3MUGUpKQrlcgeshAJghhsaLUxEbF1m1iDKEkkiLlSSzFEgiAGGVptTERs3TZa2rYVC1ac77RR2zaCIAYHWq1NRGzdxlymVIOYHzWJWkS6oSAIYrCg1cZE7GKWKbVtK4i5TZWwSMDMceY1DScIgkgHTbswEV6HGI+Ty7RAZjR68c73LoXXZc7QYYIgiEyQIJqITc9CJEHMmypNCzeCIIhiQqu1idiFLFMSRIIgiNKCVmsT4XWIcZlGPxEEQZQYtFqbiFiHSDFEgiCI0oJWaxNJukzFGCLV0REEQZQCJIgmIrpMqeyCIAiitKDV2kTUSTUxAFSYTxAEUSrQam0irOwiEqPWbQRBEKUGrdYmwgrzxfFP5DIlCIIoDWi1NhHd1m1kIRIEQZQEtFqbiNjcO0QuU4IgiJKCVmsTsYnjn8hCJAiCKClotTYR3dZtFEMkCIIoCWi1NhFVlilZiARBECUFrdYmYhezTGM0IJggCKKUoNXaRGj8E0EQROlCq7WJ8CxTqkMkCIIoOWi1NhG7RbAQqeyCIAiipKDV2kSSdYjCPEQSRIIgiJKAVmsT4WUX5DIlCIIoOWi1NhGbhZJqCIIgShVarU1EbN1GMUSCIIjSglZrE+HNvYXWbVSHSBAEURrQam0ibPxTLC4jlBgQ7LBah/KQCIIgiCwhQTQRm5BA4w8nBJEsRIIgiJKAVmsTYVmmAAkiQRBEqUGrtYmwLFNAcZsCJIgEQRClAq3WJiJaiAyqQyQIgigNaLU2EUmSYLWoRZEsRIIgiNKAVmuTsWkEkcouCIIgSoOcVuvVq1dj7ty58Hq98Hq9aGlpwYsvvpj2NU899RRmzJgBl8uFOXPm4IUXXlA9/8UvfhGSJKn+LV26NPdPMkywa1yk5DIlCIIoDXJarSdMmIBVq1Zh69at2LJlCy6++GJceeWV2L17t+72//znP3HdddfhxhtvxLZt23DVVVfhqquuwq5du1TbLV26FK2trfzfk08+mf8nGmJsQhzRZpFgsaTGFQmCIIjhhyTLslzIDmpqavDAAw/gxhtvTHnummuuwcDAAJ5//nn+2DnnnIMzzjgDjzzyCADFQuzp6cGzzz6b9XuGQiGEQiH+t8/nQ1NTE3p7e+H1evP/MCaw4IevoLNfObYyhxV7flC61i5BEESp4fP5UFlZmZce5O3Pi8ViWLt2LQYGBtDS0qK7zcaNG7Fo0SLVY0uWLMHGjRtVj23YsAH19fWYPn06br75ZnR1daV975UrV6KyspL/a2pqyvdjmI6YaUoJNQRBEKVDziv2zp074fF44HQ6cdNNN+GZZ57BzJkzdbdta2tDQ0OD6rGGhga0tbXxv5cuXYrf/OY3WL9+PX784x/j9ddfx7JlyxCLxQyPYcWKFejt7eX/jhw5kuvHKBqiy5TihwRBEKWDLdcXTJ8+Hdu3b0dvby+efvpp3HDDDXj99dcNRTET1157Lf//OXPmYO7cuTjllFOwYcMGXHLJJbqvcTqdcDqdeb1fsbELxflkIRIEQZQOOa/YDocDU6dOxfz587Fy5UqcfvrpePjhh3W3bWxsRHt7u+qx9vZ2NDY2Gu5/ypQpqKurw0cffZTroQ0LbOQyJQiCKEkKXrHj8bgqwUWkpaUF69evVz328ssvG8YcAeDo0aPo6urC2LFjCz20IUFs30YuU4IgiNIhJ5fpihUrsGzZMjQ3N6Ovrw9r1qzBhg0bsG7dOgDA8uXLMX78eKxcuRIAcNttt+HCCy/Ef/3Xf+Hyyy/H2rVrsWXLFvziF78AAPT39+P73/8+rr76ajQ2NmLfvn248847MXXqVCxZssTkjzo4iEk1VJRPEARROuQkiB0dHVi+fDlaW1tRWVmJuXPnYt26dbj00ksBAIcPH4ZFsJDOPfdcrFmzBt/97nfx7W9/G9OmTcOzzz6L2bNnAwCsViveffdd/PrXv0ZPTw/GjRuHxYsX49577x22McJMiCOgyGVKEARROhRchzgcKKTuxGyueXQjNh3oBgCcN7UWv/vyOUN6PARBEKOJIalDJPQRW7dRDJEgCKJ0oBXbZCjLlCAIojShFdtkVFmmNusQHglBEASRCySIJmOnTjUEQRAlCa3YJkNZpgRBEKUJrdgmY7dQHSJBEEQpQiu2yVBSDUEQRGlCK7bJ2KjsgiAIoiShFdtkRJcpWYgEQRClA63YJkNJNQRBEKUJrdgmQwOCCYIgShNasU2GBgQTBEGUJrRimwxlmRIEQZQmtGKbjNjcm+oQCYIgSgdasU3GZqEYIkEQRClCK7bJUJYpQRBEaUIrtsnYKYZIEARRktCKbTKq8U/kMiUIgigZaMU2GcoyJQiCKE1oxTYZcpkSBEGUJrRim4zoMqWyC4IgiNKBVmyTUVmIVusQHglBEASRCySIJmOj1m0EQRAlCa3YJkNJNQRBEKUJrdgmY6fCfIIgiJKEVmyTodZtBEEQpQmt2CYjtm4TE2wIgiCI4Q0JoskwEXTYLJAkEkSCIIhSgQTRZFiWqZPcpQRBECUFrdom0+B1wmaRML7aPdSHQhAEQeSAbagPYKRR63HixdvOR1WZY6gPhSAIgsgBEsQiMK2hYqgPgSAIgsgRcpkSBEEQBEgQCYIgCAIACSJBEARBACBBJAiCIAgAJIgEQRAEAYAEkSAIgiAAkCASBEEQBAASRIIgCIIAQIJIEARBEABIEAmCIAgCwAhp3SbLMgDA5/MN8ZEQBEEQQwnTAaYLuTAiBLGvrw8A0NTUNMRHQhAEQQwH+vr6UFlZmdNrJDkfGR1mxONxHD9+HBUVFTkP5fX5fGhqasKRI0fg9XqLdISlCZ0bY+jcGEPnxhg6N8aYdW5kWUZfXx/GjRsHiyW3qOCIsBAtFgsmTJhQ0D68Xi9doAbQuTGGzo0xdG6MoXNjjBnnJlfLkEFJNQRBEAQBEkSCIAiCAECCCKfTibvvvhtOp3OoD2XYQefGGDo3xtC5MYbOjTHD4dyMiKQagiAIgiiUUW8hEgRBEARAgkgQBEEQAEgQCYIgCAIACSJBEARBACBBJAiCIAgAo1wQf/7zn2PSpElwuVxYuHAhNm/ePNSHZCorV67EWWedhYqKCtTX1+Oqq67CBx98oNomGAzilltuQW1tLTweD66++mq0t7ertjl8+DAuv/xylJWVob6+Ht/4xjcQjUZV22zYsAFnnnkmnE4npk6diieeeKLYH89UVq1aBUmScPvtt/PHRvO5OXbsGD7/+c+jtrYWbrcbc+bMwZYtW/jzsizjrrvuwtixY+F2u7Fo0SLs3btXtY/u7m5cf/318Hq9qKqqwo033oj+/n7VNu+++y7OP/98uFwuNDU14f777x+Uz1cIsVgM3/ve9zB58mS43W6ccsopuPfee1XNpEfL+fn73/+OK664AuPGjYMkSXj22WdVzw/meXjqqacwY8YMuFwuzJkzBy+88ELuH0gepaxdu1Z2OBzyr371K3n37t3yV77yFbmqqkpub28f6kMzjSVLlsj/+7//K+/atUvevn27fNlll8nNzc1yf38/3+amm26Sm5qa5PXr18tbtmyRzznnHPncc8/lz0ejUXn27NnyokWL5G3btskvvPCCXFdXJ69YsYJvs3//frmsrEy+44475D179sg/+9nPZKvVKr/00kuD+nnzZfPmzfKkSZPkuXPnyrfddht/fLSem+7ubnnixInyF7/4RXnTpk3y/v375XXr1skfffQR32bVqlVyZWWl/Oyzz8o7duyQP/nJT8qTJ0+WA4EA32bp0qXy6aefLr/11lvyP/7xD3nq1Knyddddx5/v7e2VGxoa5Ouvv17etWuX/OSTT8put1t+9NFHB/Xz5sp9990n19bWys8//7x84MAB+amnnpI9Ho/88MMP821Gy/l54YUX5O985zvyn/70JxmA/Mwzz6ieH6zz8Oabb8pWq1W+//775T179sjf/e53ZbvdLu/cuTOnzzNqBfHss8+Wb7nlFv53LBaTx40bJ69cuXIIj6q4dHR0yADk119/XZZlWe7p6ZHtdrv81FNP8W3ee+89GYC8ceNGWZaVC95ischtbW18m9WrV8ter1cOhUKyLMvynXfeKc+aNUv1Xtdcc428ZMmSYn+kgunr65OnTZsmv/zyy/KFF17IBXE0n5tvfvOb8sc+9jHD5+PxuNzY2Cg/8MAD/LGenh7Z6XTKTz75pCzLsrxnzx4ZgPz222/zbV588UVZkiT52LFjsizL8v/8z//I1dXV/Fyx954+fbrZH8lULr/8cvlf//VfVY99+tOflq+//npZlkfv+dEK4mCeh8997nPy5ZdfrjqehQsXyv/2b/+W02cYlS7TcDiMrVu3YtGiRfwxi8WCRYsWYePGjUN4ZMWlt7cXAFBTUwMA2Lp1KyKRiOo8zJgxA83Nzfw8bNy4EXPmzEFDQwPfZsmSJfD5fNi9ezffRtwH26YUzuUtt9yCyy+/POX4R/O5+fOf/4wFCxbgs5/9LOrr6zFv3jw89thj/PkDBw6gra1N9bkqKyuxcOFC1bmpqqrCggUL+DaLFi2CxWLBpk2b+DYXXHABHA4H32bJkiX44IMPcPLkyWJ/zLw599xzsX79enz44YcAgB07duCNN97AsmXLAND5YQzmeTDrdzYqBbGzsxOxWEy1kAFAQ0MD2trahuioiks8Hsftt9+O8847D7NnzwYAtLW1weFwoKqqSrWteB7a2tp0zxN7Lt02Pp8PgUCgGB/HFNauXYt33nkHK1euTHluNJ+b/fv3Y/Xq1Zg2bRrWrVuHm2++Gf/xH/+BX//61wCSny3d76etrQ319fWq5202G2pqanI6f8ORb33rW7j22msxY8YM2O12zJs3D7fffjuuv/56AHR+GIN5Hoy2yfU8jYjxT0RmbrnlFuzatQtvvPHGUB/KsODIkSO47bbb8PLLL8Plcg314Qwr4vE4FixYgB/96EcAgHnz5mHXrl145JFHcMMNNwzx0Q09f/jDH/C73/0Oa9aswaxZs7B9+3bcfvvtGDduHJ2fEmdUWoh1dXWwWq0pGYPt7e1obGwcoqMqHrfeeiuef/55vPbaa6q5kY2NjQiHw+jp6VFtL56HxsZG3fPEnku3jdfrhdvtNvvjmMLWrVvR0dGBM888EzabDTabDa+//jp++tOfwmazoaGhYdSem7Fjx2LmzJmqx0477TQcPnwYQPKzpfv9NDY2oqOjQ/V8NBpFd3d3TudvOPKNb3yDW4lz5szBF77wBfznf/4n9zSM9vPDGMzzYLRNrudpVAqiw+HA/PnzsX79ev5YPB7H+vXr0dLSMoRHZi6yLOPWW2/FM888g1dffRWTJ09WPT9//nzY7XbVefjggw9w+PBhfh5aWlqwc+dO1UX78ssvw+v18kWzpaVFtQ+2zXA+l5dccgl27tyJ7du3838LFizA9ddfz/9/tJ6b8847L6U858MPP8TEiRMBAJMnT0ZjY6Pqc/l8PmzatEl1bnp6erB161a+zauvvop4PI6FCxfybf7+978jEonwbV5++WVMnz4d1dXVRft8heL3+1MmsVutVsTjcQB0fhiDeR5M+53llIIzgli7dq3sdDrlJ554Qt6zZ4/81a9+Va6qqlJlDJY6N998s1xZWSlv2LBBbm1t5f/8fj/f5qabbpKbm5vlV199Vd6yZYvc0tIit7S08OdZacHixYvl7du3yy+99JI8ZswY3dKCb3zjG/J7770n//znPx/2pQV6iFmmsjx6z83mzZtlm80m33ffffLevXvl3/3ud3JZWZn8f//3f3ybVatWyVVVVfJzzz0nv/vuu/KVV16pm04/b948edOmTfIbb7whT5s2TZVO39PTIzc0NMhf+MIX5F27dslr166Vy8rKhlVZgR433HCDPH78eF528ac//Umuq6uT77zzTr7NaDk/fX198rZt2+Rt27bJAOSf/OQn8rZt2+RDhw7Jsjx45+HNN9+UbTab/OCDD8rvvfeefPfdd1PZRa787Gc/k5ubm2WHwyGfffbZ8ltvvTXUh2QqAHT//e///i/fJhAIyP/+7/8uV1dXy2VlZfKnPvUpubW1VbWfgwcPysuWLZPdbrdcV1cnf+1rX5MjkYhqm9dee00+44wzZIfDIU+ZMkX1HqWCVhBH87n5y1/+Is+ePVt2Op3yjBkz5F/84heq5+PxuPy9731PbmhokJ1Op3zJJZfIH3zwgWqbrq4u+brrrpM9Ho/s9XrlL33pS3JfX59qmx07dsgf+9jHZKfTKY8fP15etWpV0T9bofh8Pvm2226Tm5ubZZfLJU+ZMkX+zne+oyoLGC3n57XXXtNdY2644QZZlgf3PPzhD3+QTz31VNnhcMizZs2S//rXv+b8eWgeIkEQBEFglMYQCYIgCEILCSJBEARBgASRIAiCIACQIBIEQRAEABJEgiAIggBAgkgQBEEQAEgQCYIgCAIACSJBEARBACBBJAiCIAgAJIgEQRAEAYAEkSAIgiAAAP8/iWKDSKQnxIsAAAAASUVORK5CYII="
-class="
-"
->
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Vemos que la aproximación al valor de $\pi$ mejora a medida que consideramos más números aleatorios!</p>
-
-</div>
-</div>
-</div>
-</div></div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Resumen:-simulaciones-de-Monte-Carlo">Resumen: simulaciones de Monte Carlo<a class="anchor-link" href="#Resumen:-simulaciones-de-Monte-Carlo">&#182;</a></h4><ul>
-<li><p>Lo que hicimos en este ejemplo fue evaluar una integral de <em>volumen</em> (en $2$ dimensiones, así que es un <em>área</em>) con números aleatorios. Este es un ejemplo de integración de Monte Carlo.</p>
-</li>
-<li><p>También podemos usar números aleatorios para <em>simular</em> sistemas físicos. Esto es muy útil en la física estadística y la física cuántica. Un ejemplo sería una simulación de Monte Carlo para calcular la energía promedio de un gas cuántico.</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Una-nota-sobre-n%C3%BAmeros-aleatorios">Una nota sobre n&#250;meros aleatorios<a class="anchor-link" href="#Una-nota-sobre-n%C3%BAmeros-aleatorios">&#182;</a></h4><ul>
-<li><p>Los computadores son sistemas <em>deterministas</em>. Los algoritmos también son deterministas. Este significa que no podemos usar un algoritmo computacional para generar números que son verdaderamente aleatorios.</p>
-</li>
-<li><p>Lo que podemos hacer es generar números <em>pseudo-aleatorios</em>. Estos son números que parecen aleatorios, aunque están generados por un algorítmo determinista.</p>
-</li>
-</ul>
-<p>Hay más información en Wikipedia:</p>
-<p><a href="https://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_pseudoaleatorios">https://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_pseudoaleatorios</a></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Resumen">Resumen<a class="anchor-link" href="#Resumen">&#182;</a></h1><ul>
-<li>La física se trata de la aplicación de ecuaciones matemáticas a la naturaleza.</li>
-<li>La mayoría de los sistema físicos reales se describen mediante ecuaciones que no pueden resolverse analíticamente (&quot;con lápiz y papel&quot;).</li>
-<li>Sin embargo, <strong>sí</strong> podemos resolverlos numéricamente con una simulación computacional.</li>
-<li>Hay varias técnicas para hacer simulaciones, por ejemplo: diferencias finitas, Monte Carlo, ... .</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></section></section>
-</div>
-</div>
-</body>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h2 id="M%C3%A9todos-de-Monte-Carlo">M&#233;todos de Monte Carlo<a class="anchor-link" href="#M%C3%A9todos-de-Monte-Carlo">&#182;</a></h2><p>En la física cuántica es muy común usar el método de Monte Carlo. Este método utiliza números aleatorios para evaluar integrales.</p> -->
+<!-- <p>Por eso recibe su nombre por un casino famoso en Mónaco:</p> -->
+<!-- <p><img src="clase1_imagenes/monte_carlo.jpg" alt="" /></p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>En la física cuántica, las posiciones de las partículas no están totalmente localizadas:</p> -->
+<!-- <ul> -->
+<!-- <li>Pueden no solamente seguir un camino en el espacio entre dos puntos.</li> -->
+<!-- <li>También puede que tomen <strong>todos</strong> los caminos entre dos puntos!</li> -->
+<!-- </ul> -->
+<!-- <img style="float: center;" src="clase1_imagenes/path_integral.jpg " alt="alt text" width="300" height="300" class="blog-image"> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>En la física estadística, también tratamos el sistema de forma probabilistica porque hay tantas partículas que es imposible analizarlas individualmente.</p> -->
+<!-- <p>Por estas razones, los métodos de Monte Carlo son muy utilizados en estudios del comportamiento de la materia al nivel microscópico.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h3 id="C%C3%A1lculos-en-la-f%C3%ADsica-cu%C3%A1ntica-o-estad%C3%ADstica">C&#225;lculos en la f&#237;sica cu&#225;ntica o estad&#237;stica<a class="anchor-link" href="#C%C3%A1lculos-en-la-f%C3%ADsica-cu%C3%A1ntica-o-estad%C3%ADstica">&#182;</a></h3><p>Típicamente en la física cuántica o estadística, queremos calcular <strong>valores promedios</strong> de algunas propiedades del sistema. Por ejemplo, el valor promedio de la energía de todas las partículas.</p> -->
+<!-- <p>Matemáticamente, calcular un promedio corresponde a la <strong>evaluación de una integral</strong>. En un sistema como el núcleo de un átomo, las integrales que tenemos que evaluar típicamente son muy complicadas y multidimensionales.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h5 id="Las-integrales">Las integrales<a class="anchor-link" href="#Las-integrales">&#182;</a></h5><p>Se puede interpretar una integral como el área debajo de una curva:</p> -->
+<!-- <p><img src="clase1_imagenes/Integral_example.png" alt="" /></p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Numéricamente podemos aproximar las integrales con muchas divisiones del área en rectángulos. Así el problema se reduce al sumatorio de las áreas de muchos rectángulos. Aquí está un ejemplo en una dimensión:</p> -->
+<!-- <p><img src="clase1_imagenes/integral_approx.png" alt="" /></p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>De hecho con un procedimiento así uno puede <strong>definir</strong> la integral de una función. Se encuentra el valor exacto de la integral en el límite de un número infinito de rectángulos con anchos infinitesimalmente pequeños.</p> -->
+<!-- <p>Como lo que vimos para las derivadas (valores de $h$ pequeños pero no nulos), es posible aproximar una integral numéricamente por el uso de rectángulos muy estrechos, pero todavía con tamaño finito.</p> -->
+<!-- <p>Entonces, puede ser que podemos tener una aproximación aceptable de la integral de una función con $1000$ rectángulos, por ejemplo.</p> -->
+<!-- <p>También se puede definir la integración en más dimensiones. Por ejemplo, se puede determinar el volumen de una forma geométrica:</p> -->
+<!-- <p><img src="clase1_imagenes/vol_integral.jpg" alt="" /></p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <ul> -->
+<!-- <li><p>Supogamos que necesitamos $1000$ divisiones en cada dimensión para calcular una integral de un volumen en $3$ dimensiones a una precisión aceptable.</p> -->
+<!-- </li> -->
+<!-- <li><p>Esto corresponde a $1000^3 = 10^9$ cubitos!</p> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <ul> -->
+<!-- <li><p>En la física cuántica y estadística es común tener integrales de $10^6 - 10^9$ <strong>dimensiones</strong>!</p> -->
+<!-- </li> -->
+<!-- <li><p>Es totalmente imposible evaluar una integral así con los métodos normales de dividir el &quot;volumen&quot; en muchos &quot;cubitos&quot; pequeños.</p> -->
+<!-- </li> -->
+<!-- <li><p>Pero, hay otro método que sirve - el <strong>Método de Monte Carlo</strong>.</p> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h3 id="Ejemplo:-calculando-el-valor-de-$%5Cpi$-con-un-m%C3%A9todo-de-Monte-Carlo">Ejemplo: calculando el valor de $\pi$ con un m&#233;todo de Monte Carlo<a class="anchor-link" href="#Ejemplo:-calculando-el-valor-de-$%5Cpi$-con-un-m%C3%A9todo-de-Monte-Carlo">&#182;</a></h3> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Consideremos un círculo con radio $r$ circunscrito dentro de un cuadrado, donde cada lado tiene longitud $2r$:</p> -->
+<!-- <img style="float: right;" src="clase1_imagenes/circlesquare1.png"> -->
+<!-- <ul> -->
+<!-- <li>El área del círculo es $M = \pi r^2$.</li> -->
+<!-- <li>El área del cuadrado es $N = 4r^2$.</li> -->
+<!-- </ul> -->
+<!-- <p>Entonces tenemos:</p> -->
+<!-- $$\frac{M}{N} = \frac{\pi}{4}$$<p>Así que es posible calcular $\pi$ a través del cuociente:</p> -->
+<!-- $$\pi = 4M/N$$ -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h4 id="Estimando-el-%C3%A1rea-del-c%C3%ADrculo-con-n%C3%BAmeros-aleatorios">Estimando el &#225;rea del c&#237;rculo con n&#250;meros aleatorios<a class="anchor-link" href="#Estimando-el-%C3%A1rea-del-c%C3%ADrculo-con-n%C3%BAmeros-aleatorios">&#182;</a></h4><img style="float: right;" src="clase1_imagenes/circlesquare2.png"> -->
+<!-- <p>Ahora podemos elegir números aleatorios entre $-1$ y $1$ para las coordenadas $x$ y $y$.  -->
+<!-- Estos puntos <strong>siempre estarán dentro del cuadrado</strong>, pero no siempre dentro del círculo:</p> -->
+<!-- <p>La probabilidad de tener un punto dentro del círculo es proporcional al área del círculo: $p_{circ} \propto M$.</p> -->
+<!-- <p>La probabilidad de tener un punto dentro del cuadrado es proporcional al área del cuadrado: $p_{cuad} \propto N$.</p> -->
+<!-- <p>Por lo tanto, tenemos:</p> -->
+<!-- $$\frac{p_{circ}}{p_{cuad}} = \frac{M}{N}$$ -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <img style="float: right;" src="clase1_imagenes/circlesquare2.png"> -->
+<!-- <p>Dado que los puntos <em>siempre</em> están dentro del cuadrado,</p> -->
+<!-- $$p_{cuad} = 1$$<p>por lo que el cuociente anterior puede escribirse como</p> -->
+<!-- $$p_{circ} = M/N$$<p>Si tenemos $n$ puntos en total, la probabilidad de tener $m$ puntos dentro del círculo está dada por $p_{circ} = m/n$. Por ende, tenemos una relación entre el número de puntos y los áreas:</p> -->
+<!-- $$\frac{m}{n} = \frac{M}{N}$$<p>Vamos a usar está relación para estimar el valor de $\pi$.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Primero, generamos $10$ números aleatorios entre $-1$ y $1$ que son las coordenadas en $x$ (dentro del cuadrado):</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Ahora generamos $10$ números aleatorios más dentro el mismo rango para las coordenadas $y$:</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Calculamos el radio de todos los puntos.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Comparamos estos radios con el radio del círculo (que es $r = 1$). Si su radio es mayor que $1$, ese punto no está dentro del círculo.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>array([0.53211976, 0.97058278, 1.16745815, 0.59565166, 0.74339391, -->
+<!--        0.86875641, 0.28885551, 1.17722448, 0.78311334, 0.91377612])</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Hay algunos valores mayor que $1$. Podemos calcular cuantos por el uso de un arreglo <em>Booleano</em>.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">&gt;</span> <span class="mf">1.0</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>array([False, False,  True, False, False, False, False,  True, False, -->
+<!--        False])</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>2</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>La sumatoria de un arreglo Booleano solamente cuenta los valores de <em>True</em> (verdad).</p> -->
+<!-- <p>Entonces, el número total de puntos dentro del círculo está dado por:</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>8</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Ahora, calculamos la razón entre el número de puntos dentro del círculo y el número total.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>0.8</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Este es el valor de $M/N$ (para solamente $10$ puntos). El valor de $\pi$ está dado por $4M/N$:</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="mf">4.0</span><span class="o">*</span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>3.2</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>El resultado no es muy preciso...</p> -->
+<!-- <p>Pero podemos usar más números aleatorios. Ahora hacemos un ciclo <em>for</em> para ver como el resultado mejora con más números aleatorios. Primero, definimos una lista de números totales de puntos que usaremos en cada ciclo:</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeros_totales</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">10100</span><span class="p">,</span><span class="mi">100</span><span class="p">)]</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeros_totales</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400, 4500, 4600, 4700, 4800, 4900, 5000, 5100, 5200, 5300, 5400, 5500, 5600, 5700, 5800, 5900, 6000, 6100, 6200, 6300, 6400, 6500, 6600, 6700, 6800, 6900, 7000, 7100, 7200, 7300, 7400, 7500, 7600, 7700, 7800, 7900, 8000, 8100, 8200, 8300, 8400, 8500, 8600, 8700, 8800, 8900, 9000, 9100, 9200, 9300, 9400, 9500, 9600, 9700, 9800, 9900, 10000]</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Creamos una lista vacía para guardar los resultados de cada cálculo del valor de $\pi$.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">resultados</span> <span class="o">=</span> <span class="p">[]</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Ahora estimamos el valor de $\pi$ con diferentes números totales de puntos aleatorios.</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numeros_totales</span><span class="p">:</span> <span class="c1"># Ciclo sobre todos los valores de &quot;n&quot;</span> -->
+<!--     <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="c1">#n números aleatorios para x</span> -->
+<!--     <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span> <span class="c1">#n números aleatorios para y</span> -->
+<!--     <span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#Los radios de los puntos</span> -->
+<!--     <span class="n">m</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">)</span> <span class="c1">#Cuantos puntos hay dentro del círculo, el valor &quot;m&quot;</span> -->
+<!--     <span class="n">resultados</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mf">4.0</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">n</span> <span class="p">)</span> <span class="c1">#Agregamos el valor estimado de pi</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- </div></div></section></section><section ><section ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   "> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"> -->
+<!---->
+<!-- <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"> -->
+<!--      <div class="CodeMirror cm-s-jupyter"> -->
+<!-- <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">numeros_totales</span><span class="p">,</span><span class="n">resultados</span><span class="p">)</span> -->
+<!-- <span class="n">plot</span><span class="p">([</span><span class="n">numeros_totales</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">numeros_totales</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">])</span> -->
+<!-- </pre></div> -->
+<!---->
+<!--      </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-Cell-outputWrapper"> -->
+<!-- <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser"> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="jp-OutputArea jp-Cell-outputArea"> -->
+<!-- <div class="jp-OutputArea-child jp-OutputArea-executeResult"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"> -->
+<!-- <pre>[&lt;matplotlib.lines.Line2D at 0x169c42070&gt;]</pre> -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!-- <div class="jp-OutputArea-child"> -->
+<!---->
+<!---->
+<!-- <div class="jp-RenderedImage jp-OutputArea-output "> -->
+<!-- <img src="data:image/png;base64,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EARAgkgQBEEQAEgQCYIgCAIACSJBEARBACBBJAiCIAgAo1wQf/7zn2PSpElwuVxYuHAhNm/ePNSHZCorV67EWWedhYqKCtTX1+Oqq67CBx98oNomGAzilltuQW1tLTweD66++mq0t7ertjl8+DAuv/xylJWVob6+Ht/4xjcQjUZV22zYsAFnnnkmnE4npk6diieeeKLYH89UVq1aBUmScPvtt/PHRvO5OXbsGD7/+c+jtrYWbrcbc+bMwZYtW/jzsizjrrvuwtixY+F2u7Fo0SLs3btXtY/u7m5cf/318Hq9qKqqwo033oj+/n7VNu+++y7OP/98uFwuNDU14f777x+Uz1cIsVgM3/ve9zB58mS43W6ccsopuPfee1XNpEfL+fn73/+OK664AuPGjYMkSXj22WdVzw/meXjqqacwY8YMuFwuzJkzBy+88ELuH0gepaxdu1Z2OBzyr371K3n37t3yV77yFbmqqkpub28f6kMzjSVLlsj/+7//K+/atUvevn27fNlll8nNzc1yf38/3+amm26Sm5qa5PXr18tbtmyRzznnHPncc8/lz0ejUXn27NnyokWL5G3btskvvPCCXFdXJ69YsYJvs3//frmsrEy+44475D179sg/+9nPZKvVKr/00kuD+nnzZfPmzfKkSZPkuXPnyrfddht/fLSem+7ubnnixInyF7/4RXnTpk3y/v375XXr1skfffQR32bVqlVyZWWl/Oyzz8o7duyQP/nJT8qTJ0+WA4EA32bp0qXy6aefLr/11lvyP/7xD3nq1Knyddddx5/v7e2VGxoa5Ouvv17etWuX/OSTT8put1t+9NFHB/Xz5sp9990n19bWys8//7x84MAB+amnnpI9Ho/88MMP821Gy/l54YUX5O985zvyn/70JxmA/Mwzz6ieH6zz8Oabb8pWq1W+//775T179sjf/e53ZbvdLu/cuTOnzzNqBfHss8+Wb7nlFv53LBaTx40bJ69cuXIIj6q4dHR0yADk119/XZZlWe7p6ZHtdrv81FNP8W3ee+89GYC8ceNGWZaVC95ischtbW18m9WrV8ter1cOhUKyLMvynXfeKc+aNUv1Xtdcc428ZMmSYn+kgunr65OnTZsmv/zyy/KFF17IBXE0n5tvfvOb8sc+9jHD5+PxuNzY2Cg/8MAD/LGenh7Z6XTKTz75pCzLsrxnzx4ZgPz222/zbV588UVZkiT52LFjsizL8v/8z//I1dXV/Fyx954+fbrZH8lULr/8cvlf//VfVY99+tOflq+//npZlkfv+dEK4mCeh8997nPy5ZdfrjqehQsXyv/2b/+W02cYlS7TcDiMrVu3YtGiRfwxi8WCRYsWYePGjUN4ZMWlt7cXAFBTUwMA2Lp1KyKRiOo8zJgxA83Nzfw8bNy4EXPmzEFDQwPfZsmSJfD5fNi9ezffRtwH26YUzuUtt9yCyy+/POX4R/O5+fOf/4wFCxbgs5/9LOrr6zFv3jw89thj/PkDBw6gra1N9bkqKyuxcOFC1bmpqqrCggUL+DaLFi2CxWLBpk2b+DYXXHABHA4H32bJkiX44IMPcPLkyWJ/zLw599xzsX79enz44YcAgB07duCNN97AsmXLAND5YQzmeTDrdzYqBbGzsxOxWEy1kAFAQ0MD2trahuioiks8Hsftt9+O8847D7NnzwYAtLW1weFwoKqqSrWteB7a2tp0zxN7Lt02Pp8PgUCgGB/HFNauXYt33nkHK1euTHluNJ+b/fv3Y/Xq1Zg2bRrWrVuHm2++Gf/xH/+BX//61wCSny3d76etrQ319fWq5202G2pqanI6f8ORb33rW7j22msxY8YM2O12zJs3D7fffjuuv/56AHR+GIN5Hoy2yfU8jYjxT0RmbrnlFuzatQtvvPHGUB/KsODIkSO47bbb8PLLL8Plcg314Qwr4vE4FixYgB/96EcAgHnz5mHXrl145JFHcMMNNwzx0Q09f/jDH/C73/0Oa9aswaxZs7B9+3bcfvvtGDduHJ2fEmdUWoh1dXWwWq0pGYPt7e1obGwcoqMqHrfeeiuef/55vPbaa6q5kY2NjQiHw+jp6VFtL56HxsZG3fPEnku3jdfrhdvtNvvjmMLWrVvR0dGBM888EzabDTabDa+//jp++tOfwmazoaGhYdSem7Fjx2LmzJmqx0477TQcPnwYQPKzpfv9NDY2oqOjQ/V8NBpFd3d3TudvOPKNb3yDW4lz5szBF77wBfznf/4n9zSM9vPDGMzzYLRNrudpVAqiw+HA/PnzsX79ev5YPB7H+vXr0dLSMoRHZi6yLOPWW2/FM888g1dffRWTJ09WPT9//nzY7XbVefjggw9w+PBhfh5aWlqwc+dO1UX78ssvw+v18kWzpaVFtQ+2zXA+l5dccgl27tyJ7du3838LFizA9ddfz/9/tJ6b8847L6U858MPP8TEiRMBAJMnT0ZjY6Pqc/l8PmzatEl1bnp6erB161a+zauvvop4PI6FCxfybf7+978jEonwbV5++WVMnz4d1dXVRft8heL3+1MmsVutVsTjcQB0fhiDeR5M+53llIIzgli7dq3sdDrlJ554Qt6zZ4/81a9+Va6qqlJlDJY6N998s1xZWSlv2LBBbm1t5f/8fj/f5qabbpKbm5vlV199Vd6yZYvc0tIit7S08OdZacHixYvl7du3yy+99JI8ZswY3dKCb3zjG/J7770n//znPx/2pQV6iFmmsjx6z83mzZtlm80m33ffffLevXvl3/3ud3JZWZn8f//3f3ybVatWyVVVVfJzzz0nv/vuu/KVV16pm04/b948edOmTfIbb7whT5s2TZVO39PTIzc0NMhf+MIX5F27dslr166Vy8rKhlVZgR433HCDPH78eF528ac//Umuq6uT77zzTr7NaDk/fX198rZt2+Rt27bJAOSf/OQn8rZt2+RDhw7Jsjx45+HNN9+UbTab/OCDD8rvvfeefPfdd1PZRa787Gc/k5ubm2WHwyGfffbZ8ltvvTXUh2QqAHT//e///i/fJhAIyP/+7/8uV1dXy2VlZfKnPvUpubW1VbWfgwcPysuWLZPdbrdcV1cnf+1rX5MjkYhqm9dee00+44wzZIfDIU+ZMkX1HqWCVhBH87n5y1/+Is+ePVt2Op3yjBkz5F/84heq5+PxuPy9731PbmhokJ1Op3zJJZfIH3zwgWqbrq4u+brrrpM9Ho/s9XrlL33pS3JfX59qmx07dsgf+9jHZKfTKY8fP15etWpV0T9bofh8Pvm2226Tm5ubZZfLJU+ZMkX+zne+oyoLGC3n57XXXtNdY2644QZZlgf3PPzhD3+QTz31VNnhcMizZs2S//rXv+b8eWgeIkEQBEFglMYQCYIgCEILCSJBEARBgASRIAiCIACQIBIEQRAEABJEgiAIggBAgkgQBEEQAEgQCYIgCAIACSJBEARBACBBJAiCIAgAJIgEQRAEAYAEkSAIgiAAAP8/iWKDSKQnxIsAAAAASUVORK5CYII=" -->
+<!-- class=" -->
+<!-- " -->
+<!-- > -->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- </div><div class="fragment" > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <p>Vemos que la aproximación al valor de $\pi$ mejora a medida que consideramos más números aleatorios!</p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h4 id="Resumen:-simulaciones-de-Monte-Carlo">Resumen: simulaciones de Monte Carlo<a class="anchor-link" href="#Resumen:-simulaciones-de-Monte-Carlo">&#182;</a></h4><ul> -->
+<!-- <li><p>Lo que hicimos en este ejemplo fue evaluar una integral de <em>volumen</em> (en $2$ dimensiones, así que es un <em>área</em>) con números aleatorios. Este es un ejemplo de integración de Monte Carlo.</p> -->
+<!-- </li> -->
+<!-- <li><p>También podemos usar números aleatorios para <em>simular</em> sistemas físicos. Esto es muy útil en la física estadística y la física cuántica. Un ejemplo sería una simulación de Monte Carlo para calcular la energía promedio de un gas cuántico.</p> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h4 id="Una-nota-sobre-n%C3%BAmeros-aleatorios">Una nota sobre n&#250;meros aleatorios<a class="anchor-link" href="#Una-nota-sobre-n%C3%BAmeros-aleatorios">&#182;</a></h4><ul> -->
+<!-- <li><p>Los computadores son sistemas <em>deterministas</em>. Los algoritmos también son deterministas. Este significa que no podemos usar un algoritmo computacional para generar números que son verdaderamente aleatorios.</p> -->
+<!-- </li> -->
+<!-- <li><p>Lo que podemos hacer es generar números <em>pseudo-aleatorios</em>. Estos son números que parecen aleatorios, aunque están generados por un algorítmo determinista.</p> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!-- <p>Hay más información en Wikipedia:</p> -->
+<!-- <p><a href="https://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_pseudoaleatorios">https://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_pseudoaleatorios</a></p> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section><section ><section > -->
+<!-- <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell"> -->
+<!-- <div class="jp-Cell-inputWrapper"> -->
+<!-- <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser"> -->
+<!-- </div> -->
+<!-- <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"> -->
+<!-- <h1 id="Resumen">Resumen<a class="anchor-link" href="#Resumen">&#182;</a></h1><ul> -->
+<!-- <li>La física se trata de la aplicación de ecuaciones matemáticas a la naturaleza.</li> -->
+<!-- <li>La mayoría de los sistema físicos reales se describen mediante ecuaciones que no pueden resolverse analíticamente (&quot;con lápiz y papel&quot;).</li> -->
+<!-- <li>Sin embargo, <strong>sí</strong> podemos resolverlos numéricamente con una simulación computacional.</li> -->
+<!-- <li>Hay varias técnicas para hacer simulaciones, por ejemplo: diferencias finitas, Monte Carlo, ... .</li> -->
+<!-- </ul> -->
+<!---->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div></section></section> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </body> -->
 
 
 
