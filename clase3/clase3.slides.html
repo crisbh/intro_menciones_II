@@ -16844,19 +16844,6 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>Supongamos que función de ac
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center>
-<img style="float: center;" src="clase3_imagenes/IA_2024_nobel_prize.jpg" alt="alt text" width="600" height="600" class="blog-image">
-</center>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>En el caso de una red:</p>
 <ol>
 <li>Ingresamos valores de entrada a la primera <em>capa</em> de neuronas, que se llama <strong>la capa de entrada</strong>.</li>
@@ -16886,6 +16873,19 @@ $$x_1 w_1 + x_2 w_2 + x_3 w_3 + x_4 w_4 = -0.2$$<p>Supongamos que función de ac
 </div>
 </div>
 </div></div></section></section><section ><section >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<center>
+<img style="float: center;" src="clase3_imagenes/IA_2024_nobel_prize.jpg" alt="alt text" width="600" height="600" class="blog-image">
+</center>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17356,9 +17356,12 @@ $$\frac{dy}{dx} = y(1-y)$$
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice que el ajuste de los pesos es:</p>
 <ul>
-<li><strong>Proporcional al error $\epsilon$</strong>. Si el error es grande, implica que los valores de los pesos son muy lejos de sus valores óptimos, y por lo tanto deberíamos cambiarlos más que en el caso de un error pequeño.</li>
-<li><strong>Proporcional a las entradas $\vec{x}$</strong>. Así que, cada peso es proporcional a la entrada asociada. Si la entrada asociada al peso es igual a cero, no importa que valor de peso tenemos y por lo tanto no es necesario cambiarlo.</li>
-<li><strong>Proporcional a la derivada de la función de activación</strong>. Buscamos el mínimo del error, $\epsilon$. Este error esta dado por $y_c - y$. Para encontrar el mínimo de una función, hay que considerar su derivada. Entonces, la derivada del error es la derivada de la función $y$ ($y_c$ es una constante).</li>
+<li><p><strong>Proporcional al error $\epsilon$</strong>. Si el error es grande, implica que los valores de los pesos están muy lejos de sus valores óptimos, y por lo tanto deberíamos cambiarlos más que en el caso de un error pequeño.</p>
+</li>
+<li><p><strong>Proporcional a las entradas $\vec{x}$</strong>. Así que, cada peso es proporcional a la entrada asociada. Si la entrada asociada al peso es igual a cero, no importa que valor de peso tenemos y por lo tanto no es necesario cambiarlo.</p>
+</li>
+<li><p><strong>Proporcional a la derivada de la función de activación</strong>. Buscamos el mínimo del error, $\epsilon$. Este error esta dado por $\epsilon= y_c - y$. Para encontrar el mínimo de una función, hay que considerar su derivada. Entonces, la derivada del error es la derivada de la función $y$ ($y_c$ es una constante).</p>
+</li>
 </ul>
 
 </div>
@@ -18007,7 +18010,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice qu
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Estos son los valores de $\delta \vec{w}$ que usamos para actualizar los pesos. Ahora, repetimos este proceso $10000$ veces para entrenar la red:</p>
+<p>Estos son los valores de $\delta \vec{w}$ que usamos para actualizar los pesos. Ahora, repetimos este proceso muchas veces ($10000$) para entrenar la red:</p>
 
 </div>
 </div>
@@ -18150,6 +18153,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice qu
 </tr>
 </tbody>
 </table>
+<p>Si estamos conformes con estas respuestas, entonces hemos <strong>terminado de entrenar a la red</strong>.</p>
 
 </div>
 </div>
@@ -18160,7 +18164,6 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice qu
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>De esta forma, hemos <strong>terminado de entrenar a la red</strong>.</p>
 <p>Ahora... ¿Podrá nuestra red puede determinar el valor correcto para entradas que nunca ha visto? Queremos ver la siguiente salida:</p>
 <table>
 <thead>
@@ -18236,7 +18239,7 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice qu
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>¡Esta respuesta está muy cerca del valor correcto, que es $1$!</strong></p>
+<p><strong>¡Esta respuesta está muy cerca del valor correcto, que es $1$!</strong> ✅ 🤖</p>
 
 </div>
 </div>
@@ -18329,22 +18332,6 @@ $$\delta \vec{w} = \epsilon \vec{x} \frac{dy}{dx}$$<p>Esta ecuación nos dice qu
 </div>
 </div>
 </div>
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div></section></section>
 </div>
 </div>
