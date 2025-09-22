@@ -7997,13 +7997,22 @@ $$\frac{dv}{dt} = -\frac{k}{m}x \qquad \qquad \textrm{ecuación para la posició
 <ul>
 <li>Obtuvimos una solución a las ecuaciones del sistema en forma <em>numérica</em> (y no analítica).</li>
 </ul>
+</div>
+</div>
+</div>
+</div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Este problema es bastante sencillo, y de hecho podemos resolver la ecuación diferencial analíticamente. Podemos ver la solución utilizando otro módulo de Python, <code>Sympy</code>.</p>
 <p>Podemos escribir la ecuación diferencial en otra forma:</p>
 $$m\frac{d^2x}{dt^2} = -kx$$$$\rightarrow \quad \ddot{x} + \omega_0^2 x = 0$$<p>donde $\omega_0^2 = k/m$.</p>
 </div>
 </div>
 </div>
-</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8199,7 +8208,7 @@ $$v(t) = \cos(t)$$<p>Podemos comprobar nuestro resultado numérico con el result
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Otro-m%C3%A9todo:-diferencias-finitas">Otro método: diferencias finitas<a class="anchor-link" href="#Otro-m%C3%A9todo:-diferencias-finitas">¶</a></h3><p>El procedimiento anterior, utilizando <code>SciPy</code>, no funciona de forma general para todas las ecuaciones.</p>
+<h3 id="El-m%C3%A9todo-de-diferencias-finitas">El método de diferencias finitas<a class="anchor-link" href="#El-m%C3%A9todo-de-diferencias-finitas">¶</a></h3><p>El procedimiento anterior, utilizando <code>SciPy</code>, <strong>no funciona de forma general para todas las ecuaciones</strong>.</p>
 <p>Ahora veremos un método muy útil que se puede aplicar a <em>cualquier</em> ecuación diferencial: el método de <strong>diferencias finitas</strong>.</p>
 <p>En escencia, <strong><span style="color:blue"> este método nos permitirá transformar una <em>ecuación diferencial</em> en una <em>ecuación algebraica</em> común.</span></strong></p>
 <p>Este método es ocupado en simulaciones de la relatividad general, astofísica, cosmología, del clima, etc.</p>
@@ -8212,7 +8221,7 @@ $$v(t) = \cos(t)$$<p>Podemos comprobar nuestro resultado numérico con el result
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="El-m%C3%A9todo-de-diferencias-finitas">El método de diferencias finitas<a class="anchor-link" href="#El-m%C3%A9todo-de-diferencias-finitas">¶</a></h3><p>Consideremos la definición fundamental de una derivada:</p>
+<p>Consideremos la definición fundamental de una derivada:</p>
 $$\frac{dx}{dt} = \lim_{h \to 0} \left(\frac{x(t+h) - x(t)}{h}\right)$$
 </div>
 </div>
