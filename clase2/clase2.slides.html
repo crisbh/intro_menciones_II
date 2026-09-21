@@ -7507,23 +7507,13 @@ main {
 </div>
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Utilizaremos de ejemplo un caso del clima, con datos de la temperatura global promedio mensual (dataset: HadCRUT4, del UK Met Office, <a href="https://crudata.uea.ac.uk/cru/data/temperature/">https://crudata.uea.ac.uk/cru/data/temperature/</a>).</p>
-</div>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Pasos-principales-del-an%C3%A1lisis-de-datos:">Pasos principales del análisis de datos:<a class="anchor-link" href="#Pasos-principales-del-an%C3%A1lisis-de-datos:">¶</a></h2><h3 id="1.-Explorar-y-procesar-los-datos.">1. Explorar y procesar los datos.<a class="anchor-link" href="#1.-Explorar-y-procesar-los-datos.">¶</a></h3><h3 id="2.-Aplicar-an%C3%A1lisis">2. Aplicar análisis<a class="anchor-link" href="#2.-Aplicar-an%C3%A1lisis">¶</a></h3><h3 id="3.-Visualizar-el-resultado.">3. Visualizar el resultado.<a class="anchor-link" href="#3.-Visualizar-el-resultado.">¶</a></h3>
+<h2 id="Pasos-principales-del-an%C3%A1lisis-de-datos:">Pasos principales del análisis de datos:<a class="anchor-link" href="#Pasos-principales-del-an%C3%A1lisis-de-datos:">¶</a></h2><h3 id="1.-Explorar-y-procesar-los-datos.">1. Explorar y procesar los datos.<a class="anchor-link" href="#1.-Explorar-y-procesar-los-datos.">¶</a></h3><h3 id="2.-Aplicar-an%C3%A1lisis.">2. Aplicar análisis.<a class="anchor-link" href="#2.-Aplicar-an%C3%A1lisis.">¶</a></h3><h3 id="3.-Visualizar-el-resultado.">3. Visualizar el resultado.<a class="anchor-link" href="#3.-Visualizar-el-resultado.">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7534,7 +7524,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="1.-Exploraci%C3%B3n-de-los-datos">1. Exploración de los datos<a class="anchor-link" href="#1.-Exploraci%C3%B3n-de-los-datos">¶</a></h2><p>El primer paso es simplemente "mirar" a los datos (i.e. verificar el contenido del archivo de datos, hacer un gráfico simple). Es un paso importante pero frecuentemente olvidado...</p>
-<p>Nuestros cerebros son muy buenos en procesar información visual, por lo tanto una imágen visual de los datos puede otorgar información útil inmediatemente. Podemos ver inmediatemente si hay distintos grupos de datos, o valores que son muy diferentes de los demás.</p>
+<p>Nuestros cerebros son muy buenos en procesar información visual, por lo tanto una mirada a los datos puede otorgar información útil inmediatemente: podemos distinguir si hay distintos grupos de datos, o valores que son muy diferentes de los demás.</p>
 </div>
 </div>
 </div>
@@ -7555,8 +7545,9 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Puntos como estos se llaman <em>outliers</em> en inglés.</p>
+<p>Puntos "aislados" como estos se llaman <em>outliers</em> en inglés.</p>
 <p>Podría ser que los datos tienen un error, o podría ser algo nuevo y interesante...</p>
+<p>Siempre vale la pena prestarles atención.</p>
 </div>
 </div>
 </div>
@@ -7567,11 +7558,12 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Veamos un ejemplo:</p>
-<p>Tenemos un archivo de texto que contiene información del promedio global de la temperatura.</p>
+<p>Utilizaremos un caso del clima, con datos de la temperatura global promedio mensual (dataset: HadCRUT4, del UK Met Office, <a href="https://crudata.uea.ac.uk/cru/data/temperature/">https://crudata.uea.ac.uk/cru/data/temperature/</a>).</p>
+<p>Esto de texto que contiene información del promedio global de la temperatura.</p>
 <p>(Por simplicidad, el archivo de datos que viene de la página web ya está reducido.)</p>
 <ul>
 <li>Podemos leer las primeras 10 líneas del archivo desde Python con el comando "head" de Linux.</li>
-<li><strong>Nota</strong>: para ejecutarlo desde el Jupyter notebook, anteponer "!".</li>
+<li><strong>Nota</strong>: para ejecutarlo desde un notebook de Python, anteponer "!".</li>
 </ul>
 </div>
 </div>
@@ -9003,205 +8995,7 @@ weighted avg       0.97      0.97      0.97       899
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Datos-masivos">Datos masivos<a class="anchor-link" href="#Datos-masivos">¶</a></h2><p>Anteriormente vimos que hoy en día tenemos muchos datos disponibles, pero demasiados para hacer un análisis "tradicional" como el que hicimos con las temperaturas.</p>
-<p>Necesitamos nuevas técnicas de extracción, almacenamiento y análisis de datos. El desarrollo y aplicación de estas técnicas es una ciencia nueva que se llama <em>ciencia de datos</em>.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Bases-de-datos">Bases de datos<a class="anchor-link" href="#Bases-de-datos">¶</a></h3><p>Uno de los desafíos grandes en ciencia de datos es cómo almacenar y procesar los datos.</p>
-<p>Un ejemplo es el nuevo telescopio Vera-Rubin LSST (en el norte de Chile).</p>
-<p><img alt="" src="clase2_imagenes_datos/lsst.jpg"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>$\sim 15$ TB de datos por noche.</li>
-<li>No es factible tener todos estos datos en formato <em>raw</em> en un servidor.</li>
-<li>Por ejemplo, si quiero usar solamente los datos de estrellas variables, quiero buscar y descargar solamente esos datos, y no todos.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Por lo tanto, es muy importante construir una <em>base de datos</em> que guarda los datos en una forma estructurada y accesible.</p>
-<p>Hay equipos que trabajan en la colaboración del LSST para diseñar su base de datos, y la infraestructura necesaria (servidores, conexiones, etc.)</p>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Algunos otros ejemplos del uso de bases de datos:</p>
-<ul>
-<li>Las simulaciones cosmológicas modernas generan muchos datos que necesitan organización.</li>
-<li>Los experimentos en la física de partículas (por ejemplo, el LHC) también generan muchos datos.</li>
-</ul>
-<p>Por lo tanto, para los científicos modernos es muy importante tener conocimiento del diseño y operación de las bases de datos.</p>
-</div>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Los-tipos-de-bases-de-datos">Los tipos de bases de datos<a class="anchor-link" href="#Los-tipos-de-bases-de-datos">¶</a></h3><ul>
-<li><strong>Relacionales</strong>: los datos están organizados en tablas, que tiene relaciones entre ellas. Es tipo más utilizado.</li>
-</ul>
-<p><img alt="" src="clase2_imagenes_datos/relational_database_small.png"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>No-relacional: bases de datos distribuidas, almacen de documentos, bases de datos gráficas, pares de valores-claves</li>
-</ul>
-<p><img alt="" src="clase2_imagenes_datos/non_relational.jpg"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Bases-de-datos-relacionales">Bases de datos relacionales<a class="anchor-link" href="#Bases-de-datos-relacionales">¶</a></h4><p>Se puede "interactuar" con muchas bases de datos utilizando un lenguaje que se llama <em>SQL</em> (Structured Query Language). <strong>No</strong> es un lenguaje de programación, sino un lenguaje especializado para el uso de bases de datos.</p>
-<ul>
-<li>Los datos en una base de datos relacional están organizados en tablas (que a veces se llaman "relaciones") con columnas y filas.</li>
-<li>Las columnas corresponden a las atributas de los datos, mientra las filas son los registros.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Ejemplo: un catálogo de estrellas (filas), con coordenadas, tipo espectral, luminosidad, etc. (columnas):</p>
-<p>Tabla: estrellas</p>
-<img alt="alt text" class="blog-image" height="300" src="clase2_imagenes_datos/catalogue.png" style="float: center;" width="800"/>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>El punto importante es que cada fila tiene un número de identificación, o una clave.</p>
-<p>Entonces, quizás tenemos otra tabla sobre estrellas variables, con atributas (columnas) acerca de la variación en magnitud, tipo de estrella variable, etc. Cada estrella en esa tabla también tendrá un número de identificación:</p>
-<p>Tabla: estrellas_variables</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Nombre</th>
-<th>Mag. max.</th>
-<th>Mag. min.</th>
-<th>Tipo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>9</td>
-<td>Betelgeuse</td>
-<td>0.0</td>
-<td>1.3</td>
-<td>Supergigante rojo</td>
-</tr>
-<tr>
-<td>60</td>
-<td>Algol</td>
-<td>2.1</td>
-<td>3.4</td>
-<td>Binaria eclipsante</td>
-</tr>
-<tr>
-<td>61</td>
-<td>Eta Carinae</td>
-<td>-0.8</td>
-<td>7.9</td>
-<td>Variable LBV</td>
-</tr>
-</tbody>
-</table>
-<p>Así que podemos relacionar las dos tablas por coincidencia de los números de identificación.</p>
-<p>En esta manera podemos combinar la información de muchas tablas para encontrar lo que necesitamos.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Acceso-remoto">Acceso remoto<a class="anchor-link" href="#Acceso-remoto">¶</a></h4><p>En el caso de los datos masivos del LSST, por ejemplo, las tablas que contienen la información de las observaciones van a estar en un servidor (o varios).</p>
-<p>Un astrónomo que quiere usar los datos puede enviar una solicitud al servidor (escrito en <em>SQL</em>) y el servidor combinará las tablas según lo que está pidiendo. Finalmente enviará la tabla resultante al usuario.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="" src="clase2_imagenes_datos/database_access.png"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Bases-de-datos-en-la-astronom%C3%ADa">Bases de datos en la astronomía<a class="anchor-link" href="#Bases-de-datos-en-la-astronom%C3%ADa">¶</a></h4><p>Se puede acceder a muchos bases de datos astronómicas directamente de Python por el uso del módulo <strong>astroquery</strong> que es parte de <strong>astropy</strong>, un módulo de funciones útiles para la astronomía.</p>
-<p><img alt="" src="clase2_imagenes_datos/astropy.png"/></p>
-<p><a href="http://www.astropy.org/">http://www.astropy.org/</a></p>
-<p><a href="https://astroquery.readthedocs.io/en/latest/">https://astroquery.readthedocs.io/en/latest/</a></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-datos-masivos">Análisis de datos masivos<a class="anchor-link" href="#An%C3%A1lisis-de-datos-masivos">¶</a></h2><p>Obtener los datos es el primer paso. El segundo es hacer el análisis!</p>
-<p>Anteriormente vimos el ejemplo de la anomalía de temperaturas.</p>
+<h2 id="An%C3%A1lisis-de-datos-masivos">Análisis de datos masivos<a class="anchor-link" href="#An%C3%A1lisis-de-datos-masivos">¶</a></h2><p>Anteriormente vimos el ejemplo de la anomalía de temperaturas.</p>
 <p>Ahora veremos un ejemplo que muestra las dificultades en trabajar con datos <strong>masivos</strong>.</p>
 </div>
 </div>
@@ -9478,6 +9272,80 @@ weighted avg       0.97      0.97      0.97       899
 </div>
 </div>
 </div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="El-an%C3%A1lisis-de-datos-masivos-puede-ser-problem%C3%A1tico-si-tenemos-demasiados-datos.">El análisis de datos masivos puede ser problemático si tenemos demasiados datos.<a class="anchor-link" href="#El-an%C3%A1lisis-de-datos-masivos-puede-ser-problem%C3%A1tico-si-tenemos-demasiados-datos.">¶</a></h3><p>Recordar que las imágenes están compuestas por pixeles, y cada pixel ocupa un cierto espacio en la memoria</p>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">imagenes</span><span class="p">),</span> <span class="n">imagenes</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(numpy.ndarray, dtype('float64'))</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Todos los valores del arreglo de imagenes son <em>floats</em> de $64$ bits. Así que la memoria necesaria para cargar todos los datos es</p>
+<p>$64 \times 400000 = 2.56 \times 10^7$ bits $\sim 3.2$ MB.</p>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Pero si tenemos $1000$ imagenes, con resolución $1000 \times 1000$, ocupará</p>
+<p>$64 \times 1000 \times 1000 \times 1000 \approx 8$ GB!</p>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Es poco práctico cargar $8$ GB de datos en un computador para realizar un cálculo...</p>
+<p>Típicamente en estos casos es necesario pensar bien como procesar los datos.</p>
+<ul>
+<li>Es decir, pensar bien que <em>algoritmo</em> utilizar.</li>
+</ul>
+<p>Por ejemplo: podríamos dividir las imágenes, realizar algunos cálculos y guardarlos, para luego seguir analizando el resto.</p>
+<ul>
+<li>En el caso de analizar datos masivos, necesitamos nuevas formas de trabajar. El análisis "hecho a mano" que vimos al principio de la clase es resulta poco práctico.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
