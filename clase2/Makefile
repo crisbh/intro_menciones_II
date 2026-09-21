@@ -1,6 +1,6 @@
 # Define input jupyter notebook to be converted into slides
 # By default, output file is named after the input_notebook
-input_notebook = clase2.ipynb
+input_notebook = clase-analisis-de-datos.ipynb
 
 slides: $(input_notebook)
 	jupyter nbconvert $(input_notebook) --to slides \
